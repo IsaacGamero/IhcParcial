@@ -27,7 +27,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
         <Mark n={73} />
       </div>
       <div className="intro-bottom">
-        <div className="pin-dots" aria-label={`${i + 1} de ${SLIDES.length}`}>
+        <div className="pin-dots" role="img" aria-label={`${i + 1} de ${SLIDES.length}`}>
           {SLIDES.map((_, j) => (
             <span key={j} className={j <= i ? 'on' : ''} />
           ))}

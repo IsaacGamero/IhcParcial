@@ -101,7 +101,7 @@ export default function Inicio() {
         {manana.length > 0 && (
           <div className="banner t-amber home-tomorrow" data-testid="home-tomorrow">
             <Bell size={24} aria-hidden />
-            <div className="col" style={{ gap: 0, flex: 1 }}>
+            <div className="col" style={{ gap: 8, flex: 1 }}>
               <strong>Mañana: {actividadesTxt(manana.length)}</strong>
               {manana.map((a) => {
                 const v = vinculoInfo(db, a);

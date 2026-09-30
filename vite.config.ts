@@ -2,9 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// base = nombre del repositorio en GitHub Pages
+// base = nombre del repositorio en GitHub Pages (BASE_PATH=/IhcParcial/ en el workflow de publicación)
+const BASE = process.env.BASE_PATH || '/justicia-cercana/';
 export default defineConfig({
-  base: '/justicia-cercana/',
+  base: BASE,
   plugins: [
     react(),
     VitePWA({
@@ -18,8 +19,8 @@ export default defineConfig({
         lang: 'es',
         orientation: 'landscape',
         display: 'standalone',
-        start_url: '/justicia-cercana/',
-        scope: '/justicia-cercana/',
+        start_url: BASE,
+        scope: BASE,
         background_color: '#f6f4ef',
         theme_color: '#1d4f91',
         icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],

@@ -212,12 +212,11 @@ export function buildSeed(kind: 'base' | 'mixed' = 'base'): DB {
 
   const cases = [cVencida, cHoy, cSinAvance, cConcluido, cProxima, cNormal, cBorrador];
 
-  // Semilla "mixed": registros en la tableta sin enviar desde hace 5 días (recordatorio 3.5).
+  // Semilla "mixed": 4 registros por enviar desde hace 5 días (recordatorio 3.5 y variantes de P-09).
   const mixed = kind === 'mixed';
   if (mixed) {
     const local: SyncState = 'local';
     cNormal.sync = local;
-    cBorrador.sync = local;
     actuaciones[3].sync = local;
     actividades[actividades.length - 2].sync = local;
     cHoy.sync = 'review';

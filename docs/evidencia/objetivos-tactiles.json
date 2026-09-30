@@ -1,0 +1,722 @@
+[
+  {
+    "pantalla": "Global",
+    "nombre": "Menú: tamaño de letra",
+    "letra": "Normal",
+    "objetivos": 5,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "¿Olvidó su PIN?",
+    "letra": "Normal",
+    "objetivos": 3,
+    "minAncho": 103.765625,
+    "minAlto": 48,
+    "minSeparacion": null,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "PIN",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 96,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Ayuda",
+    "letra": "Normal",
+    "objetivos": 14,
+    "minAncho": 97.171875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Introducción",
+    "letra": "Normal",
+    "objetivos": 2,
+    "minAncho": 100.734375,
+    "minAlto": 64,
+    "minSeparacion": null,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio (pendientes, recordatorio, batería 15 %)",
+    "letra": "Normal",
+    "objetivos": 26,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio con borrador sin terminar",
+    "letra": "Normal",
+    "objetivos": 26,
+    "minAncho": 121.921875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Recuperación de borrador (ventana)",
+    "letra": "Normal",
+    "objetivos": 2,
+    "minAncho": 134.015625,
+    "minAlto": 64,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: filtro de fechas",
+    "letra": "Normal",
+    "objetivos": 27,
+    "minAncho": 120.265625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: lista",
+    "letra": "Normal",
+    "objetivos": 31,
+    "minAncho": 108.75,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Duplicado",
+    "letra": "Normal",
+    "objetivos": 3,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 1",
+    "letra": "Normal",
+    "objetivos": 28,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 2",
+    "letra": "Normal",
+    "objetivos": 45,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 3",
+    "letra": "Normal",
+    "objetivos": 14,
+    "minAncho": 126.75,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso: edición con Modificado",
+    "letra": "Normal",
+    "objetivos": 27,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: detalle",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: registrar avance",
+    "letra": "Normal",
+    "objetivos": 14,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-05",
+    "nombre": "Actuaciones: lista",
+    "letra": "Normal",
+    "objetivos": 22,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 1",
+    "letra": "Normal",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 2",
+    "letra": "Normal",
+    "objetivos": 28,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 3 (Concluida)",
+    "letra": "Normal",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación: detalle",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 130.515625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: búsqueda",
+    "letra": "Normal",
+    "objetivos": 32,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Día",
+    "letra": "Normal",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Mes",
+    "letra": "Normal",
+    "objetivos": 57,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Semana",
+    "letra": "Normal",
+    "objetivos": 37,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad nueva",
+    "letra": "Normal",
+    "objetivos": 39,
+    "minAncho": 58.921875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: cruce de horario",
+    "letra": "Normal",
+    "objetivos": 3,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: detalle",
+    "letra": "Normal",
+    "objetivos": 17,
+    "minAncho": 130.515625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: conflicto y [Ver y cambiar]",
+    "letra": "Normal",
+    "objetivos": 5,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: error",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: fallo parcial",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: pendientes",
+    "letra": "Normal",
+    "objetivos": 12,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: progreso",
+    "letra": "Normal",
+    "objetivos": 10,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora",
+    "letra": "Normal",
+    "objetivos": 36,
+    "minAncho": 167,
+    "minAlto": 49.734375,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora: editar",
+    "letra": "Normal",
+    "objetivos": 7,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "Global",
+    "nombre": "Menú: tamaño de letra",
+    "letra": "Grande",
+    "objetivos": 5,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "¿Olvidó su PIN?",
+    "letra": "Grande",
+    "objetivos": 3,
+    "minAncho": 113.0625,
+    "minAlto": 50.4375,
+    "minSeparacion": null,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "PIN",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 96,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Ayuda",
+    "letra": "Grande",
+    "objetivos": 14,
+    "minAncho": 97.171875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Introducción",
+    "letra": "Grande",
+    "objetivos": 2,
+    "minAncho": 109.53125,
+    "minAlto": 64,
+    "minSeparacion": null,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio (pendientes, recordatorio, batería 15 %)",
+    "letra": "Grande",
+    "objetivos": 26,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio con borrador sin terminar",
+    "letra": "Grande",
+    "objetivos": 26,
+    "minAncho": 121.921875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Recuperación de borrador (ventana)",
+    "letra": "Grande",
+    "objetivos": 2,
+    "minAncho": 134.015625,
+    "minAlto": 64,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: filtro de fechas",
+    "letra": "Grande",
+    "objetivos": 27,
+    "minAncho": 134.3125,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: lista",
+    "letra": "Grande",
+    "objetivos": 31,
+    "minAncho": 120.875,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Duplicado",
+    "letra": "Grande",
+    "objetivos": 3,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 1",
+    "letra": "Grande",
+    "objetivos": 28,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 2",
+    "letra": "Grande",
+    "objetivos": 45,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 3",
+    "letra": "Grande",
+    "objetivos": 14,
+    "minAncho": 134.53125,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso: edición con Modificado",
+    "letra": "Grande",
+    "objetivos": 27,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: detalle",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 131.40625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: registrar avance",
+    "letra": "Grande",
+    "objetivos": 14,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-05",
+    "nombre": "Actuaciones: lista",
+    "letra": "Grande",
+    "objetivos": 22,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 1",
+    "letra": "Grande",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 2",
+    "letra": "Grande",
+    "objetivos": 28,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 3 (Concluida)",
+    "letra": "Grande",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación: detalle",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 130.515625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: búsqueda",
+    "letra": "Grande",
+    "objetivos": 32,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Día",
+    "letra": "Grande",
+    "objetivos": 24,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Mes",
+    "letra": "Grande",
+    "objetivos": 57,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Semana",
+    "letra": "Grande",
+    "objetivos": 37,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad nueva",
+    "letra": "Grande",
+    "objetivos": 39,
+    "minAncho": 62.734375,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: cruce de horario",
+    "letra": "Grande",
+    "objetivos": 3,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: detalle",
+    "letra": "Grande",
+    "objetivos": 17,
+    "minAncho": 130.515625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: conflicto y [Ver y cambiar]",
+    "letra": "Grande",
+    "objetivos": 5,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 12,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: error",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: fallo parcial",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: pendientes",
+    "letra": "Grande",
+    "objetivos": 12,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: progreso",
+    "letra": "Grande",
+    "objetivos": 10,
+    "minAncho": 145.640625,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora",
+    "letra": "Grande",
+    "objetivos": 36,
+    "minAncho": 187,
+    "minAlto": 52.515625,
+    "minSeparacion": 8,
+    "fallos": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora: editar",
+    "letra": "Grande",
+    "objetivos": 7,
+    "minAncho": 48,
+    "minAlto": 48,
+    "minSeparacion": 8,
+    "fallos": []
+  }
+]

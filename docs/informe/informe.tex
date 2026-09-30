@@ -1,0 +1,165 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage{lmodern}\else\usepackage{fontspec}\fi
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable,array,graphicx,float,caption}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{qrcode}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\newcommand{\enlace}{https://isaacgamero.github.io/IhcParcial/?reset=1\&today=2026-05-12}
+
+\begin{document}
+
+% ---------------------------------------------------------------- 1
+\begin{center}
+{\large UTEC · CS2H01 Interacción Humano-Computador · Examen Parcial 2026-2}\\[10pt]
+{\LARGE\bfseries Justicia Cercana}\\[4pt]
+{\large Prototipo web para jueces de paz en tableta de 10 pulgadas, con trabajo sin Internet}\\[12pt]
+Sebastian Antonio Hernandez Miñano\\
+Andre Contreras Valera\\
+Isaac Percy Gamero del Aguila\\[12pt]
+\qrcode[height=3cm]{https://isaacgamero.github.io/IhcParcial/?reset=1&today=2026-05-12}\\[4pt]
+\url{https://isaacgamero.github.io/IhcParcial/?reset=1&today=2026-05-12}
+\end{center}
+
+\textbf{Uso.} PIN \texttt{1234}. \texttt{?reset=1} restablece los datos semilla (ficticios); \texttt{?today=2026-05-12} fija la fecha de la situación de uso. \textbf{Sin Internet:} abrir una vez el enlace, luego en Chrome DevTools \emph{Network} $\rightarrow$ \emph{Offline}; la app sigue cargando y guardando. Al volver la conexión, envía sola. Resultados de envío: \texttt{?scenario=sync-ok|sync-partial|sync-error|conflict}. Computadora (P-10): ventana $\geq$ 1400 px o \texttt{?device=pc}. Modo anotado: \texttt{?annotate=1}.
+
+\textbf{Vista de tableta en Chrome.} Se revisó con \emph{Toggle device toolbar} (DevTools, Ctrl+Shift+M) y dos dispositivos personalizados: \emph{Tableta 10''} 1280×800 horizontal, DPR 2, táctil; y \emph{Computadora P-10} 1440×900, DPR 1. Scripts: \texttt{npm run tablet} y \texttt{npm run tablet:pc}.
+
+% ---------------------------------------------------------------- 2
+\section{Caso y usuario}
+Jueza de paz rural, poca experiencia digital, conexión intermitente, tableta de 10'' apoyada en una mesa y mostrada a las partes. Registra conflictos, actuaciones notariales y su agenda; hoy usa cuadernos, lo que causa duplicados, búsquedas difíciles y fechas olvidadas.
+
+% ---------------------------------------------------------------- 3
+\section{Modelo conceptual y estrategia sin conexión}
+\textbf{Modelo:} el cuaderno de registro que ya usa, con 4 secciones fijas en el menú lateral: Inicio, Casos, Actuaciones, Agenda. Todo se guarda primero en la tableta y luego se envía al Poder Judicial.
+
+\textbf{Barra de estado} fija en todas las pantallas: conexión (``Con Internet'' azul / ``Sin Internet · puede seguir trabajando'' gris), datos (``Todo enviado'' verde / ``3 registros por enviar'' ámbar) y ``Último envío''. Con Internet y pendientes aparece [Enviar ahora].
+
+\textbf{Colores} (siempre con ícono y texto): azul = acción/información; gris = normal o inactivo; ámbar = falta enviar o atención pronto; verde = enviado o terminado; rojo = error que pide acción. ``Sin Internet'' nunca es rojo.
+
+\textbf{Distintivo por registro} en cada fila y detalle: ``En la tableta'' (ámbar), ``Enviado'' (verde), ``Revisar'' (rojo). \textbf{Confirmación} siempre dice dónde quedó: ``Caso JZ04-TAB01-202605-0013 guardado en la tableta. Se enviará cuando haya Internet.''
+
+\textbf{Guardado automático} al salir de cada campo y cada 3 s; al reabrir: ``Tenía un caso sin terminar (…) ¿Desea continuar?''. Recordatorio en Inicio si pasan 3 días sin enviar. \textbf{Borrador/Completo} automático en los 3 módulos, con ``Borrador · falta: …'' y filtro ``Mostrar solo borradores''. \textbf{Códigos} generados sin conexión con prefijo de tableta (\texttt{JZ04-TAB01-202605-0013}, \texttt{NOT-TAB01-202605-0007}), sin choques al enviar.
+
+\textbf{Otros:} sin asteriscos, ``(opcional)'' en texto y línea que explica cada campo condicional; dictado con el micrófono del teclado (Gboard sin conexión, sin botón propio); aviso de batería al 20 \% y 10 \%; tamaño de letra Normal/Grande/Muy grande; solo horizontal; PIN y bloqueo a los 5 min.
+
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+\textbf{En la interfaz} & \textbf{En el enunciado}\\\hline
+Guardado en la tableta / En la tableta & Almacenado localmente\\
+N registros por enviar & Sincronización pendiente\\
+Enviar al Poder Judicial / [Enviar ahora] & Sincronizar\\
+``Se enviaron los 4 registros'' / Todo enviado & Sincronización completada\\
+Sin Internet · puede seguir trabajando & Trabajo sin conexión\\\hline
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------- 4
+\section{Módulo 1: Casos (P-02 a P-04)}
+\textbf{P-02:} búsqueda por nombre o DNI, filtros visibles (estado, comunidad, fechas), casos que requieren atención primero. \textbf{P-03:} 3 pasos (El problema, Las personas, Próxima cita y guardar) con resumen antes de guardar; la próxima fecha crea una actividad en la agenda. \textbf{P-04:} detalle, [Registrar avance] y [Editar datos] con campos ``Modificado'' y [Deshacer cambios].
+
+\begin{small}
+\begin{longtable}{|L{3cm}|L{2.6cm}|L{4.4cm}|L{5.2cm}|}\hline
+\textbf{Campo} & \textbf{Tipo} & \textbf{Validación} & \textbf{Mensaje}\\\hline\endhead
+Código & Automático & Formato con prefijo de tableta & —\\\hline
+Fecha de registro & Obligatorio (hoy) & No futura & La fecha no puede ser posterior a hoy.\\\hline
+Tipo de conflicto & Obligatorio & Elegir; ``Otro'' pide texto & Elija de qué trata el problema.\\\hline
+Descripción & Obligatorio & No vacía & Cuente brevemente qué pasó.\\\hline
+Estado & Obligatorio (En trámite) & Concluido exige acuerdo & Para cerrar el caso, escriba el acuerdo o resultado.\\\hline
+Observaciones & Opcional & — & —\\\hline
+Próxima fecha & Opcional & No pasada; crea actividad & La próxima cita no puede ser en una fecha pasada.\\\hline
+\multicolumn{4}{|l|}{\textbf{Cada parte (mismo editor en actuaciones)}}\\\hline
+Nombres y apellidos & Obligatorio & Nombre y un apellido & Escriba el nombre y al menos un apellido.\\\hline
+Documento & Opcional & DNI / Carné / Otro / No tiene / No lo tiene a la mano & —\\\hline
+Número & Condicional (si hay tipo) & DNI de 8 números & El DNI tiene 8 números. Revíselo o elija `No lo tiene a la mano'.\\\hline
+Teléfono & Opcional (``No tiene'') & 9 números & El celular tiene 9 números.\\\hline
+Comunidad & Obligatorio & No vacía & Indique la comunidad donde vive.\\\hline
+Dirección & Opcional & — & —\\\hline
+Rol & Obligatorio & Al menos un solicitante & El caso necesita al menos una persona que lo solicite.\\\hline
+\end{longtable}
+\end{small}
+
+\textbf{Requiere atención} (en texto): ``Cita vencida'' (la cita pasó sin avance posterior), ``Cita hoy'' y ``N días sin avance'' ($\geq$ 15 días en trámite o en conciliación). \textbf{Estado ``En conciliación'':} la conciliación es la vía principal del juez de paz (Ley 29824); distingue los casos con diálogo en curso de los recién registrados. \textbf{Duplicados:} mismo DNI o nombre parecido en la misma comunidad; advierte sin bloquear: [Es la misma persona: usar sus datos] / [Es otra persona: continuar].
+
+% ---------------------------------------------------------------- 5
+\section{Módulo 2: Actuaciones (P-05, P-06)}
+\textbf{P-05:} búsqueda por nombre o DNI; filtros comunidad, tipo, estado de atención y fechas. \textbf{P-06:} 3 pasos (¿Qué trámite?, Las personas, Resultado). Se muestran 4 tarjetas y [Ver más trámites], para reducir la carga de lectura. Dos dimensiones separadas: \emph{estado de atención} (Pendiente / Atendida / Concluida, explicado en cada botón) y \emph{estado del registro} (Borrador / Completo).
+
+\begin{small}
+\begin{longtable}{|L{3cm}|L{2.6cm}|L{4.4cm}|L{5.2cm}|}\hline
+\textbf{Campo} & \textbf{Tipo} & \textbf{Validación} & \textbf{Mensaje}\\\hline\endhead
+Fecha de solicitud & Obligatorio (hoy) & No futura & La fecha de solicitud no puede ser posterior a hoy.\\\hline
+Tipo de actuación & Obligatorio & Tarjetas del catálogo & Elija qué trámite le piden.\\\hline
+Asunto & Obligatorio & No vacío & Cuente en pocas palabras qué necesita la persona.\\\hline
+Estado de atención & Obligatorio (Pendiente) & — & —\\\hline
+Fecha de atención & Condicional (Atendida) & $\geq$ solicitud, no futura & La atención no puede ser antes de la solicitud.\\\hline
+Resultado & Condicional (Concluida) & No vacío & Para concluir, escriba qué se entregó o qué constancia se emitió.\\\hline
+Fecha de entrega & Condicional (Concluida) & $\geq$ atención & La entrega no puede ser antes de la atención.\\\hline
+Observaciones, documentos & Opcional & Foto o referencia física & —\\\hline
+Participación & Obligatorio & Solicitante / Declarante / Testigo & El trámite necesita al menos una persona que lo solicite.\\\hline
+\end{longtable}
+\end{small}
+
+\textbf{Catálogo} (etiqueta cotidiana; término legal en gris): Certificar una firma (legalización de firma), Certificar una copia (copia certificada), Constancia de que vive en un lugar (domiciliaria), de que ocupa un terreno (posesión), de que sigue con vida (supervivencia), de que viven juntos (convivencia), Venta o traspaso de un bien (transferencia, dentro de los montos de ley), Otra. Verificado contra las competencias notariales de la Ley 29824. \textbf{Duplicado de trámite:} mismo solicitante, tipo y solicitud a menos de 7 días; advierte sin bloquear.
+
+% ---------------------------------------------------------------- 6
+\section{Módulo 3: Agenda (P-07, P-08)}
+Vistas [Mes] [Semana] [Día] y [Hoy] con botones (sin gestos). En la vista Mes se ven hasta 3 actividades por día y ``+N más''. Categorías con color, ícono y texto: Audiencia, Reunión, Visita a comunidad, Otra. Estados: Programada, Realizada, Cancelada (tachada). Aviso ``Mañana: 2 actividades'' en Agenda e Inicio. Búsqueda por título, comunidad o persona.
+
+\begin{small}
+\begin{longtable}{|L{3cm}|L{2.6cm}|L{4.4cm}|L{5.2cm}|}\hline
+\textbf{Campo} & \textbf{Tipo} & \textbf{Validación} & \textbf{Mensaje}\\\hline\endhead
+Título & Obligatorio (sugerencias) & No vacío & Escriba un nombre para la actividad.\\\hline
+Categoría & Obligatorio & Botones con ícono & Elija el tipo de actividad.\\\hline
+Fecha & Obligatorio & Pasada: aviso no bloqueante & Está agendando en una fecha que ya pasó. ¿Es correcto?\\\hline
+Hora inicio / término & Opcional / condicional & Término posterior al inicio & La hora de término debe ser después de la de inicio.\\\hline
+Lugar & Obligatorio & Comunidades u otro lugar & Indique dónde será.\\\hline
+Descripción & Opcional & — & —\\\hline
+Estado & Obligatorio (Programada) & Realizada en fecha futura: aviso & Marcó como realizada una actividad que aún no ocurre. ¿Es correcto?\\\hline
+Vínculo, recordatorio & Opcional & Caso o trámite; 1 día antes por defecto & —\\\hline
+\end{longtable}
+\end{small}
+\textbf{Cruce de horario:} ``A esa hora ya tiene: Visita a Huayllay. ¿Agendar igual?'' con [Cambiar la hora] [Agendar igual]. La próxima fecha de un caso crea una actividad vinculada (``Creada desde el caso …'').
+
+% ---------------------------------------------------------------- 7
+\section{Envío y computadora (P-09, P-10)}
+Al volver Internet, el envío es \textbf{automático}, porque a la jueza se le puede olvidar hacerlo, y también existe [Enviar ahora]. Se puede enviar desde la sede o desde la comunidad. El progreso muestra ``Enviando 2 de 4…'' con una barra y el estado de cada registro. Resultados:
+\begin{itemize}\setlength\itemsep{0pt}
+\item Éxito: ``Se enviaron los 4 registros. Todo está guardado en el Poder Judicial.''
+\item Corte: ``Se enviaron 2 de 4. Se cortó el Internet. Los otros 2 siguen seguros en la tableta.'' [Reintentar]
+\item Error: ``El Poder Judicial no respondió. Sus 4 registros siguen seguros en la tableta. Intente más tarde.'' [Reintentar]
+\item Conflicto: se aplica solo el cambio más reciente por campo y se informa ``Se usó la versión de la computadora del … en: Observaciones.'' [Ver y cambiar] permite elegir la otra versión.
+\end{itemize}
+\textbf{P-10:} es la misma aplicación a 1440×900, con tablas, efecto al pasar el mouse y el texto ``Haz clic''. Muestra lo que ya llegó al Poder Judicial y permite editarlo. Solo informa lo que el servidor puede saber: ``La tableta envió datos por última vez el …''; nunca cuántos registros quedan pendientes.
+
+% ---------------------------------------------------------------- 8
+\section{Flujos de la situación de uso}
+Datos restablecidos y fecha 12/05/2026 antes de cada flujo; capturas generadas con Playwright (1280×800, táctil). Flujo 1: caso vecinal con corte real de Internet. Flujo 2: actuación con cierre y recuperación. Flujo 3: agenda de la semana. Flujo 4: reunión y envío. Complementarios: A, avance de un caso; B, computadora.
+\input{capturas.tex}
+
+% ---------------------------------------------------------------- 9
+\section{Matriz de justificación}
+Una fila por elemento; el ID coincide con el marcador del modo anotado (\texttt{?annotate=1}).
+\input{matriz.tex}
+
+% ---------------------------------------------------------------- 10
+\section{Evidencia de factores humanos}
+\input{evidencia.tex}
+
+% ---------------------------------------------------------------- 11
+\section{Alcance}
+\textbf{Real:} guardado en la tableta, detección de conexión, carga sin Internet (service worker), validaciones, búsquedas, borradores, recuperación y fotos. \textbf{Simulado:} servidor del Poder Judicial, envío y sus resultados, conflictos, desbloqueo por código y batería (\texttt{?battery=}). \textbf{Solo diseño:} cifrado local y borrado remoto de una tableta perdida. El dictado depende del teclado del sistema. Lo no enviado se pierde si la tableta se pierde; por eso existe el recordatorio.
+
+% ---------------------------------------------------------------- 12
+\section{Limitaciones y trabajo futuro}
+Interfaz solo en español; hablantes de quechua y aimara se atienden con lenguaje simple, íconos y resumen leído en voz alta (futuro: interfaz en quechua y aimara, validada con usuarios). Solo orientación horizontal. Sin pruebas con usuarios reales. Ninguna pantalla quedó como boceto (Plan B no fue necesario).
+
+% ---------------------------------------------------------------- 13
+\section{Plan de evaluación (DCU)}
+Prueba con 5 jueces de paz en tableta de 10'', con el Internet apagado durante las tareas 1 a 3 y encendido en la 4. Tareas: (1) registrar el conflicto vecinal; (2) atender una constancia de posesión hasta Concluida; (3) decir qué actividades hay mañana; (4) agendar una reunión y enviar todo; (5) registrar el avance de un caso anterior. Métricas: éxito por tarea (sin ayuda / con ayuda / no completa), tiempo por tarea, errores y SUS. Se agrega una pregunta de comprensión: ``¿Dónde está lo que registró sin Internet?''. Los resultados guiarán la siguiente iteración; no se afirman conclusiones antes de medir.
+
+\end{document}

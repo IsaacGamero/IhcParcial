@@ -98,14 +98,14 @@ export default function Envio() {
       <div className="card sync-card" data-testid="sync-progress" aria-live="polite">
         <div className="row">
           <LoaderCircle size={28} aria-hidden className="spin t-icon-blue" />
-          <strong className="sync-title">
+          <strong className="sync-title" id="sync-title">
             Enviando {n} de {run.total}…
           </strong>
           <span className="spacer" />
           <strong>{pct} %</strong>
           <Mark n={82} />
         </div>
-        <div className="progress" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
+        <div className="progress" role="progressbar" aria-labelledby="sync-title" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
           <span style={{ width: `${pct}%` }} />
         </div>
       </div>

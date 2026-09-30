@@ -246,7 +246,7 @@ export default function CasoForm({ id }: { id?: string }) {
             <Field label="Código" htmlFor="c-codigo" mark={17}>
               <input id="c-codigo" data-testid="case-code" value={c.codigo || peekCode('caso')} readOnly className="casos-readonly" />
             </Field>
-            <Field label="Fecha de registro" htmlFor="c-fecha" error={errors.fechaRegistro} modified={mod('fechaRegistro')}>
+            <Field label="Fecha de registro" htmlFor="c-fecha" help="Cámbiela si el reloj de la tableta está mal. Ej.: 12/05/2026." error={errors.fechaRegistro} modified={mod('fechaRegistro')}>
               <input
                 id="c-fecha"
                 type="date"

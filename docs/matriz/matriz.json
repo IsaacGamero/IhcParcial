@@ -1,0 +1,832 @@
+[
+  {
+    "id": 1,
+    "pantalla": "Global (barra de estado)",
+    "elemento": "Indicador de conexión: \"Con Internet\" (azul, wifi) / \"Sin Internet · puede seguir trabajando\" (gris, wifi-off)",
+    "necesidad": "Saber en todo momento si hay Internet sin que la falta de señal, que es lo normal en campo, la alarme",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado del sistema",
+    "factor": "Poca experiencia digital; trabajo en zonas sin cobertura",
+    "efecto": "Sigue registrando sin detenerse ni pensar que algo falló, porque el gris y el texto \"puede seguir trabajando\" le dicen que sin Internet no se pierde nada"
+  },
+  {
+    "id": 2,
+    "pantalla": "Global (barra de estado)",
+    "elemento": "Indicador de datos: \"3 registros por enviar\" (ámbar, cloud-upload) / \"Todo enviado\" (verde, cloud-check)",
+    "necesidad": "Saber si lo registrado ya llegó al Poder Judicial o sigue solo en la tableta",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia (ámbar = falta enviar en toda la app)",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "No tiene que recordar qué envió: el contador sube al guardar y baja al enviar, y el color con texto e ícono evita confundir guardado con enviado"
+  },
+  {
+    "id": 3,
+    "pantalla": "Global (barra de estado)",
+    "elemento": "Botón visible [Enviar ahora] (azul, ícono + texto) cuando hay Internet y pendientes",
+    "necesidad": "Aprovechar un momento con señal para enviar sin buscar dónde hacerlo",
+    "norman": "Signifier; Affordance",
+    "nielsen": "H7 Flexibilidad (atajo); H6 Reconocer antes que recordar",
+    "factor": "Ley de Fitts (objetivo de 48 px en posición fija); poca experiencia digital",
+    "efecto": "Envía con un toque desde cualquier pantalla; como el botón solo aparece cuando puede funcionar, no hay intentos fallidos sin Internet"
+  },
+  {
+    "id": 4,
+    "pantalla": "Global (menú lateral)",
+    "elemento": "Menú lateral fijo de 4 opciones con ícono + texto: Inicio, Casos, Actuaciones, Agenda",
+    "necesidad": "Moverse entre las secciones de su cuaderno sin perderse",
+    "norman": "Modelo conceptual (secciones del cuaderno de registro)",
+    "nielsen": "H4 Consistencia; H6 Reconocer antes que recordar",
+    "factor": "Ley de Hick (4 opciones); tableta de 10\" apoyada en una mesa",
+    "efecto": "Elige rápido entre pocas opciones siempre en el mismo lugar, y la opción resaltada le indica en qué sección está"
+  },
+  {
+    "id": 10,
+    "pantalla": "P-02",
+    "elemento": "Un solo campo de búsqueda \"Nombre o DNI\"",
+    "necesidad": "Encontrar el caso de la persona que tiene enfrente, sepa o no su DNI",
+    "norman": "Mapping",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Escribe lo que sabe (\"Quispe\" o un número) en el mismo lugar sin elegir antes el tipo de búsqueda, y la lista se reduce al instante"
+  },
+  {
+    "id": 11,
+    "pantalla": "P-02",
+    "elemento": "Filtros visibles como botones: En trámite / En conciliación / Concluido, Comunidad y Fechas",
+    "necesidad": "Ver los casos en conciliación o de una comunidad antes de visitarla",
+    "norman": "Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H8 Minimalismo",
+    "factor": "Poca experiencia digital",
+    "efecto": "Los estados posibles están escritos a la vista; un toque filtra y otro lo quita, sin menús ocultos ni recordar valores"
+  },
+  {
+    "id": 12,
+    "pantalla": "P-02",
+    "elemento": "Motivo de atención en texto (\"Cita vencida\", \"Cita hoy\", \"18 días sin avance\") y orden con esos casos primero",
+    "necesidad": "Saber qué caso atender primero sin revisar uno por uno",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Los casos urgentes aparecen arriba con la razón escrita e ícono, así no se olvida una cita pasada aunque no recuerde la fecha"
+  },
+  {
+    "id": 13,
+    "pantalla": "P-02",
+    "elemento": "Marca \"Borrador · falta: personas\" y casilla \"Mostrar solo borradores\"",
+    "necesidad": "Completar los casos que dejó a medias",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia",
+    "factor": "Interrupciones en campo",
+    "efecto": "La fila dice qué dato falta y la casilla los reúne, así completa los borradores sin abrir cada caso para adivinar"
+  },
+  {
+    "id": 14,
+    "pantalla": "P-02",
+    "elemento": "Distintivo \"En la tableta\" / \"Enviado\" / \"Revisar\" en cada fila",
+    "necesidad": "Saber qué casos ya llegaron al Poder Judicial",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia",
+    "factor": "Conectividad intermitente",
+    "efecto": "Con ícono y texto distingue lo guardado solo en la tableta de lo enviado, y no cree que un caso nuevo ya está a salvo fuera de la tableta"
+  },
+  {
+    "id": 15,
+    "pantalla": "P-03",
+    "elemento": "Indicador \"Paso 1 de 3\" con títulos El problema / Las personas / Próxima cita y guardar",
+    "necesidad": "Registrar el caso mientras las partes esperan sin perderse en un formulario largo",
+    "norman": "Modelo conceptual",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Responde pocas preguntas a la vez en el mismo orden en que conversa con las partes y ve cuánto falta para terminar"
+  },
+  {
+    "id": 16,
+    "pantalla": "P-03",
+    "elemento": "Tipo de conflicto con 6 botones grandes y ejemplos (\"paso, agua, ruidos, límites\")",
+    "necesidad": "Clasificar el problema con las palabras de la comunidad",
+    "norman": "Constraints",
+    "nielsen": "H2 Lenguaje del mundo real; H6 Reconocer antes que recordar",
+    "factor": "Ley de Fitts; poca experiencia digital",
+    "efecto": "Elige entre opciones válidas de 64 px con un toque, sin escribir ni recordar términos legales, y \"Otro\" pide describirlo"
+  },
+  {
+    "id": 17,
+    "pantalla": "P-03",
+    "elemento": "Código JZ04-TAB01-202605-0013 de solo lectura generado sin conexión",
+    "necesidad": "Dar a las partes un número de caso aunque no haya Internet",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H5 Prevención de errores",
+    "factor": "Sin Internet en campo",
+    "efecto": "El código definitivo aparece desde el inicio y no se puede editar; el prefijo de tableta evita que choque con otro caso al enviar"
+  },
+  {
+    "id": 18,
+    "pantalla": "P-03",
+    "elemento": "[Siguiente] valida el paso y muestra mensajes simples junto al campo (\"Cuente brevemente qué pasó.\")",
+    "necesidad": "Saber qué corregir sin conocer términos técnicos",
+    "norman": "Feedback",
+    "nielsen": "H9 Reconocer y recuperarse de errores; H5 Prevención de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "El error aparece en rojo con ícono bajo el campo exacto y dice qué hacer, así corrige antes de avanzar en vez de descubrirlo al final"
+  },
+  {
+    "id": 19,
+    "pantalla": "P-03",
+    "elemento": "Rol con botones Solicitante / Invitado / Testigo y mensaje \"El caso necesita al menos una persona que lo solicite.\"",
+    "necesidad": "Registrar quién pide la conciliación y quién es citado",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H6 Reconocer antes que recordar",
+    "factor": "Poca experiencia digital",
+    "efecto": "Solo puede elegir entre tres roles válidos y el mensaje impide dar por completo un caso sin solicitante"
+  },
+  {
+    "id": 20,
+    "pantalla": "P-03",
+    "elemento": "Documento (opcional) con la opción \"No lo tiene a la mano\"",
+    "necesidad": "Continuar aunque la persona no lleve su DNI",
+    "norman": "Constraints",
+    "nielsen": "H3 Control y libertad; H2 Lenguaje del mundo real",
+    "factor": "Contexto rural",
+    "efecto": "Registra a la persona sin inventar un número; el DNI de 8 cifras solo se valida cuando se elige DNI"
+  },
+  {
+    "id": 21,
+    "pantalla": "P-03",
+    "elemento": "Resumen legible antes de [Guardar caso]",
+    "necesidad": "Confirmar los datos con las partes antes de cerrar el registro",
+    "norman": "Feedback",
+    "nielsen": "H5 Prevención de errores; H1 Visibilidad del estado",
+    "factor": "Pantalla que la jueza muestra a los ciudadanos; idioma (lectura en voz alta)",
+    "efecto": "Lee o muestra el resumen a las partes, que detectan un nombre o rol equivocado antes de guardar"
+  },
+  {
+    "id": 22,
+    "pantalla": "P-03",
+    "elemento": "Texto discreto \"Guardado automáticamente hace un momento\"",
+    "necesidad": "No perder lo escrito si se corta el Internet o se apaga la tableta",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Conectividad intermitente; energía limitada",
+    "efecto": "Cada campo se guarda al salir de él y cada 3 s, así al volver a abrir recupera el caso en el mismo paso"
+  },
+  {
+    "id": 23,
+    "pantalla": "P-04 (Editar datos)",
+    "elemento": "Campo editado con borde y etiqueta \"Modificado\" y botón [Deshacer cambios]",
+    "necesidad": "Ver qué cambió al corregir un caso ya registrado",
+    "norman": "Feedback",
+    "nielsen": "H3 Control y libertad; H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Distingue lo cambiado sin recordar el valor original y puede volver atrás con un toque; el aviso final nombra los campos guardados"
+  },
+  {
+    "id": 24,
+    "pantalla": "P-04",
+    "elemento": "Cabecera con código, estado, distintivo \"En la tableta\" y motivo de atención",
+    "necesidad": "Saber de un vistazo en qué punto está el caso",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Ve juntos el estado del caso, si ya se envió y si tiene una cita vencida, sin buscar en el historial"
+  },
+  {
+    "id": 25,
+    "pantalla": "P-04",
+    "elemento": "Botón [Registrar avance] abajo a la derecha",
+    "necesidad": "Anotar lo ocurrido en cada reunión con las partes",
+    "norman": "Affordance",
+    "nielsen": "H4 Consistencia",
+    "factor": "Ley de Fitts; tableta de 10\" apoyada en una mesa",
+    "efecto": "La tarea más frecuente del detalle está en la misma posición que la acción principal de las demás pantallas, así la encuentra sin buscarla"
+  },
+  {
+    "id": 26,
+    "pantalla": "P-04",
+    "elemento": "Resultado o acuerdo condicional con línea \"Se pide cuando el caso pasa a Concluido\"",
+    "necesidad": "Cerrar el caso dejando constancia del acuerdo",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H9 Recuperarse de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "El campo aparece solo al elegir Concluido y el mensaje \"Para cerrar el caso, escriba el acuerdo o resultado.\" impide cerrar sin acuerdo"
+  },
+  {
+    "id": 27,
+    "pantalla": "P-04",
+    "elemento": "Historial cronológico de avances con fecha y cambio de estado",
+    "necesidad": "Recordar qué se hizo antes de la siguiente audiencia",
+    "norman": "Modelo conceptual (cuaderno de registro)",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Lee los avances en orden como en su cuaderno, sin depender de la memoria para retomar la conciliación"
+  },
+  {
+    "id": 28,
+    "pantalla": "P-04",
+    "elemento": "Evidencias: [Tomar foto] y referencia física (\"Acta en cuaderno 3, folio 12\")",
+    "necesidad": "Vincular el acta en papel con el caso digital",
+    "norman": "Affordance",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Sin Internet; cuaderno físico que ya usa",
+    "efecto": "Fotografía el acta con la cámara o anota su folio, así la encuentra después sin escanear ni conexión"
+  },
+  {
+    "id": 29,
+    "pantalla": "P-04",
+    "elemento": "Actividades vinculadas en la agenda con enlace, creadas desde la próxima fecha de atención",
+    "necesidad": "No olvidar la próxima audiencia del caso",
+    "norman": "Mapping",
+    "nielsen": "H1 Visibilidad del estado; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "La cita se agenda sola al guardar y se abre desde el caso, así no la copia a mano en la agenda ni la registra dos veces"
+  },
+  {
+    "id": 30,
+    "pantalla": "P-05",
+    "elemento": "Un solo campo de búsqueda \"Nombre o DNI\"",
+    "necesidad": "Encontrar rápido el trámite de la persona que tiene enfrente, sepa o no su DNI",
+    "norman": "Mapping",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Escribe lo que sabe (nombre o número) en el mismo lugar sin decidir antes por qué dato buscar, y la lista se reduce al instante"
+  },
+  {
+    "id": 31,
+    "pantalla": "P-05",
+    "elemento": "Filtros visibles: Comunidad, Tipo de actuación, Estado de atención y rango de fechas",
+    "necesidad": "Ver qué trámites siguen pendientes o cuáles corresponden a una comunidad antes de visitarla",
+    "norman": "Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H8 Minimalismo",
+    "factor": "Poca experiencia digital",
+    "efecto": "Los filtros están a la vista con sus opciones en lista, por lo que no tiene que descubrir un menú oculto ni recordar los estados posibles"
+  },
+  {
+    "id": 32,
+    "pantalla": "P-05",
+    "elemento": "Casilla \"Mostrar solo borradores\" y marca \"Borrador · falta: personas\" en la fila",
+    "necesidad": "Saber qué registros dejó a medias y qué les falta",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "La fila dice en texto qué dato falta, así completa el borrador sin abrirlo para adivinar y no deja trámites incompletos olvidados"
+  },
+  {
+    "id": 33,
+    "pantalla": "P-05",
+    "elemento": "Estado de atención y distintivo \"En la tableta\" / \"Enviado\" en cada fila",
+    "necesidad": "Distinguir si el trámite ya se atendió y si ya llegó al Poder Judicial",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Conectividad intermitente",
+    "efecto": "Dos distintivos con ícono y texto separan el avance del trámite del envío, evitando creer que un trámite concluido ya fue enviado"
+  },
+  {
+    "id": 34,
+    "pantalla": "P-05",
+    "elemento": "Botón [Nueva actuación] abajo a la derecha",
+    "necesidad": "Registrar un trámite apenas llega la persona",
+    "norman": "Affordance",
+    "nielsen": "H4 Consistencia",
+    "factor": "Ley de Fitts; tableta de 10\" apoyada en una mesa",
+    "efecto": "El botón grande (64 px) está siempre en la misma posición que en Casos y Agenda, así lo encuentra sin buscarlo"
+  },
+  {
+    "id": 35,
+    "pantalla": "P-06",
+    "elemento": "Indicador \"Paso 2 de 3\" con títulos ¿Qué trámite? / Las personas / Resultado",
+    "necesidad": "Atender el trámite sin perderse en un formulario largo",
+    "norman": "Modelo conceptual",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Ve cuánto falta y qué se pide en cada paso, por lo que responde pocas preguntas a la vez y no abandona el registro"
+  },
+  {
+    "id": 36,
+    "pantalla": "P-06",
+    "elemento": "4 tarjetas de trámite y botón [Ver más trámites]",
+    "necesidad": "Elegir el trámite correcto sin leer todo el catálogo",
+    "norman": "Constraints",
+    "nielsen": "H8 Minimalismo; H6 Reconocer antes que recordar",
+    "factor": "Ley de Hick; carga de lectura",
+    "efecto": "Lee solo 4 descripciones para los trámites más frecuentes y abre el resto solo si no está entre ellos, lo que reduce la carga de lectura y la posibilidad de elegir una tarjeta sin leerla"
+  },
+  {
+    "id": 37,
+    "pantalla": "P-06",
+    "elemento": "Etiqueta cotidiana con el término legal en gris (\"Constancia de que ocupa un terreno\" / Constancia de posesión)",
+    "necesidad": "Reconocer el trámite con las palabras de la persona y a la vez con el nombre oficial",
+    "norman": "Signifier",
+    "nielsen": "H2 Lenguaje del mundo real",
+    "factor": "Idioma y lenguaje simple",
+    "efecto": "Puede leer la tarjeta en voz alta a la persona y confirmar el término legal sin confundir un trámite con otro"
+  },
+  {
+    "id": 38,
+    "pantalla": "P-06",
+    "elemento": "Participación con botones Solicitante / Declarante / Testigo",
+    "necesidad": "Registrar el papel de cada persona en el trámite",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H6 Reconocer antes que recordar",
+    "factor": "Poca experiencia digital",
+    "efecto": "Solo puede elegir entre tres papeles válidos y el mensaje \"El trámite necesita al menos una persona que lo solicite.\" impide darlo por completo sin solicitante"
+  },
+  {
+    "id": 39,
+    "pantalla": "P-06",
+    "elemento": "Documento (opcional) con opción \"No lo tiene a la mano\"",
+    "necesidad": "Continuar aunque la persona no lleve su DNI",
+    "norman": "Constraints",
+    "nielsen": "H3 Control y libertad; H2 Lenguaje del mundo real",
+    "factor": "Contexto rural",
+    "efecto": "Registra a la persona sin inventar un número y el DNI de 8 cifras se valida solo cuando se elige DNI"
+  },
+  {
+    "id": 40,
+    "pantalla": "P-06",
+    "elemento": "Estado de atención segmentado con explicación corta visible en cada botón",
+    "necesidad": "Elegir el estado correcto del trámite",
+    "norman": "Signifier",
+    "nielsen": "H2 Lenguaje del mundo real; H10 Ayuda",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Cada botón dice qué significa (\"ya se atendió, falta entregar\"), así no confunde Atendida con Concluida"
+  },
+  {
+    "id": 41,
+    "pantalla": "P-06",
+    "elemento": "Línea condicional \"Se pide cuando el trámite está Atendido o Concluido\" y fecha prellenada con hoy",
+    "necesidad": "Entender por qué aparece un campo nuevo",
+    "norman": "Feedback",
+    "nielsen": "H5 Prevención de errores; H6 Reconocer antes que recordar",
+    "factor": "Poca experiencia digital",
+    "efecto": "El campo aparece solo cuando corresponde, con la razón escrita y la fecha de hoy ya puesta, lo que evita fechas vacías o de otro día"
+  },
+  {
+    "id": 42,
+    "pantalla": "P-06",
+    "elemento": "Mensaje \"Para concluir, escriba qué se entregó o qué constancia se emitió.\" al tocar Concluida sin resultado",
+    "necesidad": "Saber qué falta para cerrar el trámite",
+    "norman": "Feedback",
+    "nielsen": "H9 Reconocer y recuperarse de errores; H5 Prevención de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "El mensaje dice qué escribir junto al campo marcado en rojo, así completa el resultado en vez de concluir un trámite sin constancia"
+  },
+  {
+    "id": 43,
+    "pantalla": "P-06 (y detalle de actuación)",
+    "elemento": "Indicador del registro \"Borrador · falta: …\" / \"Completo\", separado del estado de atención (formulario y detalle)",
+    "necesidad": "Saber si el registro ya tiene todo lo necesario",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Ve en todo momento qué dato falta y el indicador cambia a Completo al llenarlo, sin mezclarlo con Pendiente/Atendida/Concluida"
+  },
+  {
+    "id": 44,
+    "pantalla": "P-06",
+    "elemento": "Botón [Guardar como borrador] disponible en los 3 pasos",
+    "necesidad": "Guardar aunque la persona se vaya antes de terminar",
+    "norman": "Affordance",
+    "nielsen": "H3 Control y libertad",
+    "factor": "Interrupciones en campo",
+    "efecto": "Guarda lo avanzado en cualquier paso sin ser bloqueada por validaciones, y el registro queda marcado como borrador"
+  },
+  {
+    "id": 45,
+    "pantalla": "P-06",
+    "elemento": "Texto \"Guardado automáticamente hace un momento\" (también al cambiar de paso)",
+    "necesidad": "No perder lo escrito si la aplicación se cierra",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Energía limitada; cierres inesperados",
+    "efecto": "Sabe que lo escrito ya quedó en la tableta, así que un cierre o un corte no la obliga a reescribir: al volver a abrir, la aplicación ofrece continuar la actuación en el mismo paso"
+  },
+  {
+    "id": 46,
+    "pantalla": "P-06",
+    "elemento": "Aviso \"¿Es el mismo trámite?\" con el registro parecido",
+    "necesidad": "Evitar registrar dos veces el mismo trámite",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H3 Control y libertad",
+    "factor": "Sin Internet: solo datos de la tableta",
+    "efecto": "Muestra el trámite parecido (misma persona, tipo y 7 días) y deja decidir [Es otro trámite: guardar] sin bloquear"
+  },
+  {
+    "id": 47,
+    "pantalla": "P-06",
+    "elemento": "Ayuda \"Puede hablar en vez de escribir\" bajo el asunto",
+    "necesidad": "Escribir textos largos en la tableta",
+    "norman": "Signifier",
+    "nielsen": "H7 Flexibilidad",
+    "factor": "Teclado en pantalla; poca experiencia digital",
+    "efecto": "Le recuerda que puede dictar con el micrófono del teclado, una alternativa al teclado en pantalla para el asunto y el resultado que no depende de un botón propio que fallaría sin Internet"
+  },
+  {
+    "id": 48,
+    "pantalla": "P-06",
+    "elemento": "Documentos (opcional): [Tomar foto] y referencia a documento físico",
+    "necesidad": "Dejar constancia del documento que la persona presentó",
+    "norman": "Affordance",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Sin Internet; documentos en papel que ya usa",
+    "efecto": "Fotografía el documento con la cámara de la tableta o anota dónde está el papel, sin escanear ni necesitar Internet, y el trámite queda enlazado a su respaldo físico"
+  },
+  {
+    "id": 50,
+    "pantalla": "P-01",
+    "elemento": "Banner ámbar \"Lleva 5 días sin enviar sus registros…\"",
+    "necesidad": "Olvida enviar durante días sin Internet y arriesga perder lo registrado si la tableta se daña",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H5 Prevención de errores",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Le recuerda el riesgo concreto al abrir la app, sin depender de que recuerde cuándo envió por última vez; reduce la pérdida de datos no enviados"
+  },
+  {
+    "id": 51,
+    "pantalla": "P-01",
+    "elemento": "Fila \"Tenía un caso sin terminar (Juan Quispe, 12/05)\" con [Continuar] [Descartar]",
+    "necesidad": "Un cierre inesperado o una interrupción la deja con un registro a medias",
+    "norman": "Feedback; Modelo conceptual (cuaderno)",
+    "nielsen": "H3 Control y libertad; H9 Recuperarse de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "Retoma el formulario exactamente donde quedó con un toque; Descartar pide confirmación, así no borra por error lo escrito"
+  },
+  {
+    "id": 52,
+    "pantalla": "P-01",
+    "elemento": "Bloque \"Casos que requieren atención\" con motivo en texto (\"Cita vencida\", \"Cita hoy\", \"15 días sin avance\")",
+    "necesidad": "Maneja muchos casos y no recuerda cuáles están atrasados",
+    "norman": "Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "El motivo escrito (no solo un color) le dice qué hacer con cada caso y el enlace la lleva directo al detalle"
+  },
+  {
+    "id": 53,
+    "pantalla": "P-01",
+    "elemento": "Aviso destacado \"Mañana: 2 actividades\" con \"Mañana 9:00 · Audiencia · Caso JZ04-…\"",
+    "necesidad": "Debe prepararse y trasladarse a otra comunidad para las citas del día siguiente",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Ve hora, tipo y caso de mañana sin abrir la agenda; evita faltar a una audiencia"
+  },
+  {
+    "id": 54,
+    "pantalla": "P-01",
+    "elemento": "Accesos grandes [Nuevo caso] [Nueva actuación] [Nueva actividad] con ícono + texto",
+    "necesidad": "Llega una persona y necesita empezar el registro de inmediato",
+    "norman": "Affordance; Mapping",
+    "nielsen": "H7 Flexibilidad y eficiencia",
+    "factor": "Ley de Fitts (botones de 64 px)",
+    "efecto": "Inicia cualquiera de las tres tareas con un toque desde la pantalla de entrada; los objetivos de 64 px reducen los toques fallidos"
+  },
+  {
+    "id": 55,
+    "pantalla": "P-01",
+    "elemento": "Orden fijo de bloques: recordatorio → Hoy → atención → próximos → accesos",
+    "necesidad": "Revisa rápido su jornada antes de salir a campo",
+    "norman": "Modelo conceptual (cuaderno)",
+    "nielsen": "H8 Minimalismo; H4 Consistencia",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Lee de lo urgente a lo planificado siempre en el mismo orden, sin buscar la información"
+  },
+  {
+    "id": 56,
+    "pantalla": "P-07",
+    "elemento": "Franja superior \"Mañana: 2 actividades\" que abre la vista Día de mañana",
+    "necesidad": "Olvida las citas próximas cuando pasa días en comunidades",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "El recordatorio aparece dentro de la app sin notificaciones del navegador y con un toque muestra el detalle de mañana"
+  },
+  {
+    "id": 57,
+    "pantalla": "P-07",
+    "elemento": "Selector grande [Mes] [Semana] [Día], botón [Hoy] y flechas anterior/siguiente",
+    "necesidad": "Poca práctica con calendarios digitales y gestos",
+    "norman": "Affordance; Signifier",
+    "nielsen": "H3 Control y libertad; H4 Consistencia",
+    "factor": "Poca experiencia digital (sin gestos ocultos); Ley de Fitts",
+    "efecto": "Cambia de periodo con botones visibles en vez de deslizar; [Hoy] la devuelve a la fecha actual si se pierde"
+  },
+  {
+    "id": 58,
+    "pantalla": "P-07",
+    "elemento": "Búsqueda por título, comunidad o persona + filtros de tipo y estado + \"Mostrar solo borradores\"",
+    "necesidad": "Recuerda a quién o dónde, no la fecha de la actividad",
+    "norman": "Constraints",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Encuentra la actividad escribiendo la comunidad o el nombre, y ubica los borradores pendientes de completar"
+  },
+  {
+    "id": 59,
+    "pantalla": "P-07",
+    "elemento": "Celda de mes con hasta 3 actividades y \"+2 más\"; tocar el día abre la vista Día",
+    "necesidad": "Planifica el mes y necesita ver la carga de cada día",
+    "norman": "Mapping",
+    "nielsen": "H8 Minimalismo; H6 Reconocer antes que recordar",
+    "factor": "Legibilidad (18 px) en tableta de 10\"",
+    "efecto": "Las celdas no se saturan ni se cortan y el \"+2 más\" indica que hay más, que se ven completos con un toque"
+  },
+  {
+    "id": 60,
+    "pantalla": "P-07",
+    "elemento": "Categoría con color + ícono + texto y estado con ícono (Cancelada tachada en gris)",
+    "necesidad": "Distinguir de un vistazo audiencias, reuniones y visitas, al aire libre",
+    "norman": "Signifier",
+    "nielsen": "H4 Consistencia; H2 Lenguaje del mundo real",
+    "factor": "Legibilidad al aire libre; daltonismo",
+    "efecto": "El texto e ícono mantienen el significado aunque el color no se distinga; lo cancelado no se confunde con lo pendiente"
+  },
+  {
+    "id": 61,
+    "pantalla": "P-07 (detalle de actividad)",
+    "elemento": "Detalle: \"Creada desde el caso JZ04-…\" con enlace",
+    "necesidad": "Necesita revisar el caso antes de la audiencia",
+    "norman": "Mapping; Modelo conceptual (cuaderno)",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Pasa de la cita al expediente con un toque, sin buscar el código"
+  },
+  {
+    "id": 62,
+    "pantalla": "P-07 (detalle de actividad)",
+    "elemento": "Cambio rápido de estado (Programada / Realizada / Cancelada) en el detalle",
+    "necesidad": "Al terminar una audiencia quiere dejar constancia sin editar todo",
+    "norman": "Feedback",
+    "nielsen": "H7 Flexibilidad y eficiencia; H3 Control y libertad",
+    "factor": "Ley de Fitts",
+    "efecto": "Marca realizada o cancelada con un toque y puede revertirlo igual de fácil; confirma que se guardó en la tableta"
+  },
+  {
+    "id": 63,
+    "pantalla": "P-08",
+    "elemento": "Título con sugerencias (\"Audiencia de conciliación\", \"Reunión con autoridades comunales\", \"Visita a …\")",
+    "necesidad": "Escribir en el teclado en pantalla es lento",
+    "norman": "Constraints",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Teclado en pantalla; poca experiencia digital",
+    "efecto": "Elige un nombre frecuente en lugar de escribirlo completo y los títulos quedan uniformes para buscarlos luego"
+  },
+  {
+    "id": 64,
+    "pantalla": "P-08",
+    "elemento": "Tipo de actividad como botones con ícono y color",
+    "necesidad": "No conoce listas desplegables y confunde categorías",
+    "norman": "Affordance; Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H4 Consistencia",
+    "factor": "Ley de Hick (4 opciones); Ley de Fitts",
+    "efecto": "Ve las 4 opciones a la vez con el mismo ícono y color que en la agenda, y elige con un toque"
+  },
+  {
+    "id": 65,
+    "pantalla": "P-08",
+    "elemento": "Estado prellenado \"Programada\" y aviso \"Marcó como realizada una actividad que aún no ocurre. ¿Es correcto?\"",
+    "necesidad": "Toca la opción equivocada por apuro",
+    "norman": "Constraints; Feedback",
+    "nielsen": "H5 Prevención de errores; H9 Recuperarse de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "El valor más común ya está elegido y un aviso no bloqueante detecta la incoherencia antes de guardar"
+  },
+  {
+    "id": 66,
+    "pantalla": "P-08",
+    "elemento": "Vínculo opcional: buscar caso o trámite por código o nombre",
+    "necesidad": "Relacionar la cita con su expediente sin recordar códigos",
+    "norman": "Mapping",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Encuentra el caso por el nombre de la persona y la actividad queda enlazada para buscarla por esa persona"
+  },
+  {
+    "id": 67,
+    "pantalla": "P-08",
+    "elemento": "Recordatorio segmentado No / El mismo día / 1 día antes (prellenado \"1 día antes\")",
+    "necesidad": "Olvida citas cuando viaja entre comunidades",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "No tiene que configurar nada: el valor prellenado \"1 día antes\" coincide con el aviso \"Mañana: …\" que Inicio y Agenda ya muestran la víspera para toda actividad no cancelada"
+  },
+  {
+    "id": 68,
+    "pantalla": "P-08",
+    "elemento": "Aviso de cruce: \"A esa hora ya tiene: Visita a Huayllay. ¿Agendar igual?\" con [Cambiar la hora] [Agendar igual]",
+    "necesidad": "No puede estar en dos comunidades a la vez",
+    "norman": "Feedback; Constraints",
+    "nielsen": "H5 Prevención de errores; H3 Control y libertad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Nombra la actividad que choca para decidir en el momento; no bloquea si el cruce es intencional"
+  },
+  {
+    "id": 69,
+    "pantalla": "P-08",
+    "elemento": "Guardado automático y confirmación \"Actividad guardada en la tableta. Se enviará cuando haya Internet.\" con distintivo ámbar",
+    "necesidad": "Duda de si lo registrado sin Internet quedó guardado",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Poca experiencia digital; conectividad intermitente",
+    "efecto": "Sabe dónde quedó el registro y que falta enviarlo; el ámbar no se confunde con \"Enviado\""
+  },
+  {
+    "id": 70,
+    "pantalla": "P-00",
+    "elemento": "PIN de 4 dígitos con teclado numérico grande en pantalla (teclas de 96×72 px)",
+    "necesidad": "Entrar rápido a la tableta sin Internet y sin memorizar un patrón",
+    "norman": "Affordance; Constraints (solo números, 4 dígitos)",
+    "nielsen": "H6 Reconocer antes que recordar; H5 Prevención de errores",
+    "factor": "Ley de Fitts; poca experiencia digital; uso al aire libre",
+    "efecto": "Acierta cada tecla aunque tenga poca práctica con pantallas táctiles, y el PIN se valida en la tableta, así que puede entrar aunque no haya señal"
+  },
+  {
+    "id": 71,
+    "pantalla": "P-00",
+    "elemento": "\"¿Olvidó su PIN?\" con la instrucción \"Llame a la sede del Poder Judicial...\" y campo para el código",
+    "necesidad": "No quedar bloqueada fuera de su cuaderno si olvida el PIN",
+    "norman": "Signifier",
+    "nielsen": "H9 Ayudar a recuperarse de errores; H10 Ayuda",
+    "factor": "Poca experiencia digital; carga de memoria",
+    "efecto": "Sabe exactamente a quién llamar y dónde escribir el código, en vez de intentar PIN al azar o dejar de usar la tableta"
+  },
+  {
+    "id": 72,
+    "pantalla": "P-00",
+    "elemento": "Mensaje simple \"PIN incorrecto. Intente otra vez.\" y botón \"Bloquear\" + bloqueo automático tras 5 minutos",
+    "necesidad": "Entender por qué no entró y proteger los datos de las personas si deja la tableta",
+    "norman": "Feedback",
+    "nielsen": "H9 Mensajes de error en lenguaje simple; H1 Visibilidad",
+    "factor": "Pantalla que se muestra a ciudadanos; tableta compartida en espacios públicos",
+    "efecto": "Reintenta de inmediato porque el mensaje dice qué pasó sin términos técnicos, y nadie puede ver los casos si la tableta queda sola"
+  },
+  {
+    "id": 73,
+    "pantalla": "P-00b",
+    "elemento": "Introducción de 3 pantallas con ilustración grande y una sola frase cada una",
+    "necesidad": "Entender la primera vez qué hace la aplicación y que funciona sin Internet",
+    "norman": "Modelo conceptual",
+    "nielsen": "H10 Ayuda y documentación; H8 Minimalismo",
+    "factor": "Poca experiencia digital; carga de memoria de trabajo",
+    "efecto": "Se lleva la idea clave (se guarda en la tableta, luego se envía) antes de empezar, así no teme perder datos cuando no hay señal"
+  },
+  {
+    "id": 74,
+    "pantalla": "P-00b",
+    "elemento": "Botón [Saltar] visible en todas las pantallas de la introducción",
+    "necesidad": "No repetir la explicación si ya la conoce",
+    "norman": "Constraints (salida siempre disponible)",
+    "nielsen": "H3 Control y libertad",
+    "factor": "Usuarios con distinta experiencia",
+    "efecto": "Entra directo a trabajar con un toque; y puede volver a verla desde Ayuda si la necesita"
+  },
+  {
+    "id": 75,
+    "pantalla": "P-00b",
+    "elemento": "Puntos de avance (1 de 3) y botón [Siguiente]/[Empezar] abajo a la derecha",
+    "necesidad": "Saber cuánto falta para empezar",
+    "norman": "Feedback; Mapping",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia (acción principal abajo a la derecha)",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Sabe que son solo 3 pantallas y dónde tocar para avanzar, igual que en los formularios"
+  },
+  {
+    "id": 76,
+    "pantalla": "Global (recuperación)",
+    "elemento": "Aviso al abrir: \"Tenía un caso sin terminar (Juan Quispe, 12/05). ¿Desea continuar?\" [Continuar] [Descartar]",
+    "necesidad": "No perder lo que escribió si la aplicación se cerró o se apagó la tableta",
+    "norman": "Feedback; Modelo conceptual",
+    "nielsen": "H9 Recuperarse de errores; H6 Reconocer antes que recordar (nombre y fecha)",
+    "factor": "Energía limitada; interrupciones mientras atiende a las partes",
+    "efecto": "Retoma el formulario en el paso donde lo dejó con un toque, reconociendo cuál era por el nombre y la fecha"
+  },
+  {
+    "id": 77,
+    "pantalla": "Global (recuperación)",
+    "elemento": "Confirmación \"¿Descartar lo que escribió? No se podrá recuperar.\" [No, volver] [Sí, descartar]",
+    "necesidad": "Evitar borrar por error datos de una persona",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H3 Control y libertad",
+    "factor": "Poca experiencia digital",
+    "efecto": "Un toque accidental en Descartar no borra nada: debe confirmar, y el texto le explica la consecuencia"
+  },
+  {
+    "id": 78,
+    "pantalla": "Global (conexión)",
+    "elemento": "Aviso gris \"Se perdió el Internet. Lo que escribe se sigue guardando en la tableta.\"",
+    "necesidad": "Saber qué pasa con lo que está escribiendo cuando se corta la señal",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H2 Lenguaje del mundo real",
+    "factor": "Zonas rurales sin cobertura estable",
+    "efecto": "Sigue llenando el formulario sin detenerse, porque el aviso gris (no rojo) le confirma que no se pierde nada"
+  },
+  {
+    "id": 79,
+    "pantalla": "Global (batería)",
+    "elemento": "Aviso \"Batería baja (18 %). Lo que registró ya está guardado en la tableta.\" (ámbar al 20 %, rojo al 10 %) con [Enviar ahora] si hay Internet",
+    "necesidad": "Saber si lo registrado corre riesgo cuando se acaba la batería",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H5 Prevención de errores",
+    "factor": "Energía limitada en zonas rurales",
+    "efecto": "No se angustia por perder datos y, si hay señal, envía antes de que la tableta se apague"
+  },
+  {
+    "id": 80,
+    "pantalla": "Global (orientación)",
+    "elemento": "Pantalla \"Gire la tableta para usarla de lado\" con ilustración al ponerla vertical",
+    "necesidad": "Usar siempre la misma distribución de pantalla",
+    "norman": "Constraints; Mapping",
+    "nielsen": "H4 Consistencia",
+    "factor": "Orientación fija horizontal; tableta apoyada en una mesa",
+    "efecto": "Encuentra el menú y los botones siempre en el mismo lugar, sin reaprender una segunda distribución vertical"
+  },
+  {
+    "id": 81,
+    "pantalla": "Global (menú lateral) / Ayuda",
+    "elemento": "\"Letra\" en el menú y \"Tamaño de letra\" [Normal] [Grande] [Muy grande] en Ayuda (se recuerda)",
+    "necesidad": "Leer cómodamente sin lentes o al aire libre",
+    "norman": "Affordance (cada opción se muestra en su tamaño)",
+    "nielsen": "H7 Flexibilidad y eficiencia",
+    "factor": "Presbicia; legibilidad al aire libre",
+    "efecto": "Elige el tamaño viendo el resultado en el mismo botón, y no tiene que volver a ajustarlo cada vez que abre la aplicación"
+  },
+  {
+    "id": 82,
+    "pantalla": "P-09",
+    "elemento": "Envío automático al volver Internet con progreso \"Enviando 2 de 4…\", barra y porcentaje",
+    "necesidad": "Enviar sin tener que acordarse y saber cuánto falta",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria (olvidar enviar); poca experiencia digital",
+    "efecto": "Los registros se envían apenas hay señal aunque no lo recuerde, y ve el avance en vez de preguntarse si la tableta se colgó"
+  },
+  {
+    "id": 83,
+    "pantalla": "P-09",
+    "elemento": "Lista de registros con estado individual (En la tableta / Enviando / Enviado)",
+    "necesidad": "Saber exactamente qué registros llegaron y cuáles no",
+    "norman": "Feedback; Mapping",
+    "nielsen": "H1 Visibilidad del estado; H4 Consistencia (mismos distintivos que en las listas)",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Si el envío se corta, identifica por nombre qué quedó en la tableta sin revisar cada módulo"
+  },
+  {
+    "id": 84,
+    "pantalla": "P-09",
+    "elemento": "Resultados de fallo: \"Se enviaron 2 de 4. Se cortó el Internet. Los otros 2 siguen seguros en la tableta.\" / \"El Poder Judicial no respondió...\" con [Reintentar]",
+    "necesidad": "Entender qué falló y qué hacer sin temer haber perdido datos",
+    "norman": "Feedback",
+    "nielsen": "H9 Ayudar a reconocer y recuperarse de errores; H2 Lenguaje del mundo real",
+    "factor": "Poca experiencia digital; conexión intermitente",
+    "efecto": "Sabe que sus datos están a salvo y reintenta con un toque, en lugar de volver a registrar lo mismo por miedo a haberlo perdido"
+  },
+  {
+    "id": 85,
+    "pantalla": "P-09",
+    "elemento": "Conflicto resuelto automáticamente con aviso \"Se usó la versión de la computadora del 14/05 en: Observaciones.\" y botón secundario [Ver y cambiar]",
+    "necesidad": "Reducir trámites mientras las partes esperan, sin dominar comparaciones complejas",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H3 Control y libertad ([Ver y cambiar])",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Evita una decisión campo por campo propensa a errores y deja la opción de revertir; la versión descartada queda en el historial"
+  },
+  {
+    "id": 86,
+    "pantalla": "P-09",
+    "elemento": "Comparación por campo: dos tarjetas \"Tableta\" y \"Computadora, fecha\" con la versión elegida resaltada",
+    "necesidad": "Recuperar su versión si la de la computadora no era la correcta",
+    "norman": "Mapping; Signifier",
+    "nielsen": "H3 Control y libertad; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Compara los dos textos lado a lado y elige tocando el que quiere, sin tener que recordar qué había escrito"
+  },
+  {
+    "id": 87,
+    "pantalla": "P-10",
+    "elemento": "Aviso \"La tableta envió datos por última vez el 12/05 a las 18:40. Lo que registró después aún no aparece aquí.\"",
+    "necesidad": "Saber en la sede por qué no ve un registro reciente de la tableta",
+    "norman": "Modelo conceptual (lo que llegó vs. lo que sigue en la tableta)",
+    "nielsen": "H1 Visibilidad del estado; H2 Lenguaje del mundo real",
+    "factor": "Uso en dos dispositivos distintos",
+    "efecto": "No asume que un registro se perdió ni lo vuelve a crear en la computadora, porque sabe hasta cuándo llegan los datos"
+  },
+  {
+    "id": 88,
+    "pantalla": "P-10",
+    "elemento": "Tablas anchas con más columnas, fila resaltada al pasar el mouse y \"Haz clic en una fila para editarla\"",
+    "necesidad": "Revisar muchos registros a la vez en la pantalla grande",
+    "norman": "Signifier (hover); Affordance",
+    "nielsen": "H4 Consistencia (mismos distintivos y menú); H6 Reconocer antes que recordar",
+    "factor": "Computadora con mouse 1440×900",
+    "efecto": "Ve de un vistazo estado, partes y próxima cita, y el resaltado le indica qué fila abrirá antes de hacer clic"
+  },
+  {
+    "id": 89,
+    "pantalla": "P-10",
+    "elemento": "Panel de edición de Estado y Observaciones desde la computadora",
+    "necesidad": "Corregir o completar datos desde la sede",
+    "norman": "Feedback; Mapping",
+    "nielsen": "H3 Control y libertad (Cancelar); H5 Prevención de errores (estados como botones)",
+    "factor": "Uso en dos dispositivos distintos",
+    "efecto": "Actualiza el caso sin esperar la tableta; si ambos cambian el mismo campo, la tableta lo resuelve y avisa en P-09"
+  }
+]

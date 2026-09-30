@@ -333,7 +333,7 @@ function Form({ id, continuar }: { id?: string; continuar: boolean }) {
               <input id="act-otro" value={a.tipoOtro} onChange={(e) => set({ tipoOtro: e.target.value })} className={modCls('tipoFull')} />
             </Field>
           )}
-          <Field label="Asunto" htmlFor="act-asunto" error={errs.asunto} modified={mod('asunto')}>
+          <Field label="Asunto" htmlFor="act-asunto" help="Qué necesita la persona. Ej.: Constancia para cobrar su pensión." error={errs.asunto} modified={mod('asunto')}>
             <textarea id="act-asunto" data-testid="act-asunto" value={a.asunto} onChange={(e) => set({ asunto: e.target.value })} className={modCls('asunto')} />
             <div className="row">
               <DictationHint />

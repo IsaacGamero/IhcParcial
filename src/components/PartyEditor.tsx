@@ -68,7 +68,7 @@ export function PartyEditor(props: {
                 />
               </Field>
             </div>
-            <Field label="Documento" optional mark={i === 0 && props.markBase ? props.markBase + 1 : undefined}>
+            <Field label="Documento" optional help="Si no lo trae, elija «No lo tiene a la mano». Ej.: DNI 41236587." mark={i === 0 && props.markBase ? props.markBase + 1 : undefined}>
               <Seg label="Tipo de documento" value={p.docTipo} options={DOCS as Exclude<DocTipo, ''>[]} onChange={(v) => update(i, { docTipo: v, docNumero: v === 'No tiene' || v === 'No lo tiene a la mano' ? '' : p.docNumero })} />
             </Field>
             {(p.docTipo === 'DNI' || p.docTipo === 'Carné de extranjería' || p.docTipo === 'Otro') && (

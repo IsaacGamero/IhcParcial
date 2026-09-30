@@ -281,7 +281,7 @@ table.tbl { width: 100%; border-collapse: collapse; background: var(--surface); 
 .ag-filters { margin-bottom: 16px; }
 .ag-filters select { width: auto; }
 .ag-search { display: flex; align-items: center; gap: 8px; flex: 1 1 320px; color: var(--muted); }
-.ag-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.ag-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
 .ag-dow { font-weight: 700; color: var(--muted); text-align: center; font-size: 0.85rem; }
 .ag-cell {
   display: flex; flex-direction: column; align-items: stretch; gap: 3px; min-height: 118px; padding: 6px;
@@ -297,8 +297,8 @@ table.tbl { width: 100%; border-collapse: collapse; background: var(--surface); 
 }
 .ag-chip svg { flex: none; }
 .ag-more { font-size: 0.78rem; font-weight: 700; color: var(--blue); }
-.ag-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; align-items: start; }
-.ag-col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ag-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; align-items: start; }
+.ag-col { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .ag-head {
   display: flex; flex-direction: column; align-items: center; min-height: 64px; justify-content: center;
   background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font: inherit; color: inherit; cursor: pointer;
@@ -378,3 +378,16 @@ html[data-font='xlarge'] { --nav-w: 236px; }
 .pc .tbl td.nw { white-space: nowrap; }
 .sidenav .navlink svg { flex-shrink: 0; }
 /* ===================== fin agente-envio ===================== */
+
+/* ===================== agente-pruebas (objetivos táctiles ≥ 48 px y separación ≥ 8 px, sección 9) ===================== */
+.field { gap: 8px; }
+.ag-dl a { display: inline-flex; align-items: center; min-height: var(--touch); }
+.pc table.tbl { border-collapse: separate; border-spacing: 0 8px; background: transparent; border: 0; }
+.pc .tbl td { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); vertical-align: middle; height: var(--touch); }
+.pc .tbl td:first-child { border-left: 1px solid var(--border); border-radius: 10px 0 0 10px; }
+.pc .tbl td:last-child { border-right: 1px solid var(--border); border-radius: 0 10px 10px 0; }
+.pc .tbl th { background: transparent; border-bottom: 0; }
+html[data-device='pc'] tr.rowlink:hover td { background: var(--blue-soft); }
+.pc .tbl td.pc-edit-cell { opacity: 1; color: transparent; }
+.pc tr.rowlink:hover td.pc-edit-cell, .pc tr.rowlink:focus-visible td.pc-edit-cell { color: var(--blue); }
+/* ===================== fin agente-pruebas ===================== */

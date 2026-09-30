@@ -93,7 +93,7 @@ export function PinScreen({ onUnlock }: { onUnlock: () => void }) {
       <div className="pin-box">
         <Lock size={40} aria-hidden className="pin-lock" />
         <h1>Ingrese su PIN</h1>
-        <div className="pin-dots" aria-label={`${pin.length} de 4 números`}>
+        <div className="pin-dots" role="img" aria-label={`${pin.length} de 4 números`}>
           {[0, 1, 2, 3].map((i) => (
             <span key={i} className={i < pin.length ? 'on' : ''} />
           ))}

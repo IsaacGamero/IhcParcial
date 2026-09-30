@@ -1,0 +1,650 @@
+[
+  {
+    "pantalla": "Global",
+    "nombre": "Menú: tamaño de letra",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "¿Olvidó su PIN?",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "PIN",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Ayuda",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Introducción",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio (pendientes, recordatorio, batería 15 %)",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio con borrador sin terminar",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Recuperación de borrador (ventana)",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: filtro de fechas",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: lista",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Duplicado",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 1",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 2",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 3",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso: edición con Modificado",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: detalle",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: registrar avance",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-05",
+    "nombre": "Actuaciones: lista",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 1",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 2",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 3 (Concluida)",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación: detalle",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: búsqueda",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Día",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Mes",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Semana",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad nueva",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: cruce de horario",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: detalle",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: conflicto y [Ver y cambiar]",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: error",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: fallo parcial",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: pendientes",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: progreso",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora: editar",
+    "letra": "Normal",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "Global",
+    "nombre": "Menú: tamaño de letra",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "¿Olvidó su PIN?",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00",
+    "nombre": "PIN",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Ayuda",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-00b",
+    "nombre": "Introducción",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio (pendientes, recordatorio, batería 15 %)",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Inicio con borrador sin terminar",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-01",
+    "nombre": "Recuperación de borrador (ventana)",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: filtro de fechas",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-02",
+    "nombre": "Casos: lista",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Duplicado",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 1",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 2",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso nuevo · Paso 3",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-03",
+    "nombre": "Caso: edición con Modificado",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: detalle",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-04",
+    "nombre": "Caso: registrar avance",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-05",
+    "nombre": "Actuaciones: lista",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 1",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 2",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación nueva · Paso 3 (Concluida)",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-06",
+    "nombre": "Actuación: detalle",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: búsqueda",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Día",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Mes",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-07",
+    "nombre": "Agenda: Semana",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad nueva",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: cruce de horario",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-08",
+    "nombre": "Actividad: detalle",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: conflicto y [Ver y cambiar]",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: error",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: fallo parcial",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: pendientes",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-09",
+    "nombre": "Envío: progreso",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  },
+  {
+    "pantalla": "P-10",
+    "nombre": "Computadora: editar",
+    "letra": "Grande",
+    "colorContrast": 0,
+    "serias": 0,
+    "otras": 0,
+    "violaciones": []
+  }
+]
