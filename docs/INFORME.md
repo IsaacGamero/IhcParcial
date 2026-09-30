@@ -5,9 +5,9 @@
 | | |
 | :--- | :--- |
 | Curso | CS2H01 Interacción Humano-Computador (UTEC, 2026-2), Examen Parcial |
-| Integrantes | _[completar]_ |
+| Integrantes | Sebastian Antonio Hernandez Miñano, Andre Contreras Valera, Isaac Percy Gamero del Aguila |
 | Título | Justicia Cercana: cuaderno digital del juez de paz para tableta de 10" que funciona sin Internet |
-| Enlace del prototipo | **`https://isaacgamero.github.io/IhcParcial/`** _[completar con el usuario u organización de GitHub]_ |
+| Enlace del prototipo | **`https://isaacgamero.github.io/IhcParcial/`** |
 | Enlace de demostración | `https://isaacgamero.github.io/IhcParcial/?reset=1&today=2026-05-12` |
 | Código QR | _[insertar aquí la imagen del QR generada a partir del enlace de demostración definitivo, por ejemplo `docs/qr-github-pages.png`, de unos 4×4 cm]_ |
 
@@ -256,7 +256,7 @@ Capturas: `captures/P-05_actuaciones-lista.png`, `captures/F2-01_tipo-tramite.pn
 
 **Duplicados.** Personas: misma regla que en casos. Trámite: al guardar (también como borrador) se busca otro con el mismo tipo, fecha de solicitud dentro de 7 días y el mismo solicitante (DNI o nombre parecido). Advierte sin bloquear: "¿Es el mismo trámite?", "Ya hay un trámite parecido en la tableta:" con código, tipo, solicitante, fecha y estado; [Es el mismo: ver el anterior] [Es otro trámite: guardar].
 
-**Edición.** Desde el detalle, [Editar] abre el mismo formulario: campos cambiados con "Modificado" y confirmación "Se guardaron N cambios en la tableta: …". (En actuaciones no hay botón [Deshacer cambios]; sí lo hay en casos.)
+**Edición.** Desde el detalle, [Editar] abre el mismo formulario: campos cambiados con "Modificado" y confirmación "Se guardaron N cambios en la tableta: …". y [Deshacer cambios], igual que en casos.
 
 ### Catálogo de actuaciones notariales
 
@@ -474,14 +474,11 @@ El dictado por voz depende del teclado del sistema (Gboard con el paquete de esp
 - **Solo orientación horizontal:** en vertical se pide girar la tableta.
 - **Sin pruebas con usuarios reales:** ninguna decisión está validada todavía con jueces de paz (ver plan en la sección 13).
 - **Funciones descritas en el diseño que el prototipo no implementa o implementa parcialmente:**
-  - Ayuda por campo con ícono `help-circle`: el componente la admite, pero ningún campo la usa todavía.
   - P-10 permite consultar y editar estado y observaciones (o descripción), pero no crear registros ni buscar o filtrar.
-  - El valor de "Recordatorio" se guarda, pero no cambia el comportamiento: el aviso "Mañana" aparece para todas las actividades no canceladas del día siguiente.
   - La versión descartada en un conflicto se guarda en el historial interno del registro, pero ese historial no se muestra en pantalla; solo se puede recuperar con [Ver y cambiar] desde el resultado del envío (y [Ver y cambiar] abre el primer registro en conflicto).
   - El distintivo "Revisar" no se asigna automáticamente (el conflicto se resuelve solo); aparece en los datos semilla `seed=mixed`.
   - El umbral de 15 días de "Requiere atención" es configurable solo en los datos, sin pantalla.
   - En P-08, la fecha y las horas usan los selectores nativos del navegador, no un calendario ni botones de hora propios.
-  - En actuaciones no hay [Deshacer cambios] al editar (sí en casos).
   - Los duplicados con registros del Poder Judicial "al enviar" no se simulan.
   - El parámetro `demo=1` se lee pero no cambia nada.
   - Persistencia en `localStorage` en lugar de IndexedDB (permitido por el diseño, pero con menos capacidad para fotos).

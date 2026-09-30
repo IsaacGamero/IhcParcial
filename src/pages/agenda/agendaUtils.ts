@@ -117,6 +117,7 @@ export function shiftMonth(iso: string, n: number) {
 }
 
 export function tomorrowActivities(db: DB) {
-  return activitiesOn(db, addDays(todayISO(), 1)).filter((a) => a.estado !== 'Cancelada');
+  // Solo las que piden recordatorio "1 día antes" (las de "El mismo día" aparecen en Hoy).
+  return activitiesOn(db, addDays(todayISO(), 1)).filter((a) => a.estado !== 'Cancelada' && a.recordatorio === '1 día antes');
 }
 export const actividadesTxt = (n: number) => `${n} ${n === 1 ? 'actividad' : 'actividades'}`;

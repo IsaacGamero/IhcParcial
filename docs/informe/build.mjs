@@ -47,11 +47,12 @@ if (existsSync(manPath)) {
     groups.get(g).push(c);
   }
   for (const [g, list] of groups) {
-    caps += `\\subsection*{${tex(g)}}\n`;
-    for (const c of list) {
-      const file = c.archivo;
-      caps += `\\IfFileExists{../../captures/${file}}{\\begin{figure}[H]\\centering\\includegraphics[width=0.8\\textwidth]{../../captures/${file}}\\caption*{\\small\\textbf{${tex(c.pantalla)}${c.paso ? ' · ' + tex(c.paso) : ''}.} ${tex(c.demuestra)} \\emph{(${tex(c.criterio_rubrica)})}}\\end{figure}}{}\n`;
-    }
+    caps += `\\subsection*{${tex(g)}}\n\\noindent\n`;
+    list.forEach((c, i) => {
+      const paso = c.paso && c.paso !== '—' ? ' · ' + tex(c.paso) : '';
+      caps += `\\begin{minipage}[t]{0.49\\textwidth}\\centering\\includegraphics[width=\\linewidth]{../../captures/${c.archivo}}\\\\[-2pt]{\\footnotesize\\raggedright\\textbf{${tex(c.pantalla)}${paso}.} ${tex(c.demuestra)} \\emph{(${tex(c.criterio_rubrica)})}\\par}\\end{minipage}${i % 2 === 0 ? '\\hfill' : '\\par\\vspace{8pt}\\noindent'}\n`;
+    });
+    caps += '\\par\\vspace{4pt}\n';
   }
 } else {
   caps = '\\emph{Ejecutar \\texttt{npm run captures} y \\texttt{node docs/informe/build.mjs}.}\n';

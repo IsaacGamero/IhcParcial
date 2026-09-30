@@ -1,0 +1,749 @@
+[
+  {
+    "archivo": "ANOT_P-01_inicio.png",
+    "pantalla": "P-01",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&annotate=1#/ · annotate=1",
+    "demuestra": "Marcadores numerados = IDs de la matriz de justificación",
+    "criterio_rubrica": "Justificación de las decisiones"
+  },
+  {
+    "archivo": "ANOT_P-03_caso-nuevo.png",
+    "pantalla": "P-03",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&annotate=1#/casos/nuevo · annotate=1",
+    "demuestra": "Marcadores numerados = IDs de la matriz de justificación",
+    "criterio_rubrica": "Justificación de las decisiones"
+  },
+  {
+    "archivo": "ANOT_P-06_actuacion-nueva.png",
+    "pantalla": "P-06",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&annotate=1#/actuaciones/nueva · annotate=1",
+    "demuestra": "Marcadores numerados = IDs de la matriz de justificación",
+    "criterio_rubrica": "Justificación de las decisiones"
+  },
+  {
+    "archivo": "ANOT_P-07_agenda.png",
+    "pantalla": "P-07",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&annotate=1#/agenda?vista=semana&fecha=2026-05-12 · annotate=1",
+    "demuestra": "Marcadores numerados = IDs de la matriz de justificación",
+    "criterio_rubrica": "Justificación de las decisiones"
+  },
+  {
+    "archivo": "ANOT_P-09_envio.png",
+    "pantalla": "P-09",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&annotate=1&seed=mixed#/envio · annotate=1",
+    "demuestra": "Marcadores numerados = IDs de la matriz de justificación",
+    "criterio_rubrica": "Justificación de las decisiones"
+  },
+  {
+    "archivo": "F1-01a_pin.png",
+    "pantalla": "P-00",
+    "flujo": "Flujo 1",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&latency=1500 · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Ingreso con PIN numérico y teclado grande; funciona sin Internet",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "F1-01b_inicio-con-internet.png",
+    "pantalla": "P-01",
+    "flujo": "Flujo 1",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&latency=1500 · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Inicio con barra \"Con Internet\" · \"Todo enviado\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F1-02_nuevo-caso-paso1.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Paso 1 \"El problema\": tipo con botones grandes, descripción con ayuda de dictado y guardado automático",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F1-03_aviso-corte-internet.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Corte real de Internet a mitad del formulario: aviso gris y barra \"Sin Internet\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F1-04_parte1-solicitante.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Parte 1 con rol, patrón \"No lo tiene a la mano\" y comunidad, sin Internet",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F1-05a_advertencia-duplicado.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "5",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Advertencia de duplicado (regla 5.3) que no bloquea",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "F1-05b_datos-reutilizados.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "5",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Se reutilizan los datos de la persona ya registrada",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "F1-06_error-sin-rol.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Error de validación en lenguaje simple junto al campo",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "F1-07_resumen-proxima-cita.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo 1",
+    "paso": "7",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/nuevo · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Próxima cita 19/05 10:00 y resumen legible antes de guardar",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F1-08_confirmacion-guardado.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo 1",
+    "paso": "8",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos/3ystpyoq · Flujo 1 (reset=1, PIN 1234 con teclado, corte real con context.setOffline(true)); ver tests/scenario.ts",
+    "demuestra": "Confirmación \"guardado en la tableta\" + \"También se agendó\" y barra \"2 registros por enviar\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F2-01_tipo-y-asunto.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Tipo en lenguaje cotidiano (4 tarjetas + Ver más) y asunto",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F2-02_solicitante.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Solicitante agregado sin duplicados; guardado automático",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F2-03a_recuperacion.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Recuperación tras cierre inesperado: \"Tenía una actuación sin terminar. ¿Desea continuar?\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F2-03b_continua-paso2.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva?continuar=1 · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Continúa en el mismo paso con los datos recuperados",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F2-04_error-concluida-sin-resultado.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva?continuar=1 · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Condicional: Concluida sin resultado → mensaje; líneas \"Se pide cuando…\"; Borrador",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "F2-05_completo.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "5",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/nueva?continuar=1 · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Resultado y fecha de entrega → el registro pasa de Borrador a Completo",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F2-06_confirmacion-guardado.png",
+    "pantalla": "P-06",
+    "flujo": "Flujo 2",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/actuaciones/40rvb56g · Flujo 2 a continuación del Flujo 1, sin Internet; la recarga simula el cierre de la aplicación",
+    "demuestra": "Confirmación en la tableta; barra \"3 registros por enviar\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F3-01_inicio-manana.png",
+    "pantalla": "P-01",
+    "flujo": "Flujo 3",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&pin=skip · Flujo 3 desde Inicio (reset=1)",
+    "demuestra": "Aviso de próximas \"Mañana: 2 actividades\" en Inicio",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F3-02_agenda-semana.png",
+    "pantalla": "P-07",
+    "flujo": "Flujo 3",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda?vista=semana&fecha=2026-05-12 · Flujo 3 desde Inicio (reset=1)",
+    "demuestra": "Vista Semana: categorías con color + ícono + texto y estados",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F3-03a_agenda-dia-miercoles.png",
+    "pantalla": "P-07",
+    "flujo": "Flujo 3",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda?vista=dia&fecha=2026-05-13 · Flujo 3 desde Inicio (reset=1)",
+    "demuestra": "Vista Día del miércoles con detalle",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F3-03b_detalle-vinculo-caso.png",
+    "pantalla": "P-08",
+    "flujo": "Flujo 3",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda/g45 · Flujo 3 desde Inicio (reset=1)",
+    "demuestra": "Detalle de la actividad con vínculo al caso",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F4-01_nueva-actividad.png",
+    "pantalla": "P-08",
+    "flujo": "Flujo 4",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/agenda/nueva · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "Reunión con autoridades comunales, jueves 14/05 15:00–16:00, Huayllay",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F4-02a_cruce-horario.png",
+    "pantalla": "P-08",
+    "flujo": "Flujo 4",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/agenda/nueva · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "Aviso no bloqueante de cruce de horario con la otra actividad",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "F4-02b_hora-ajustada.png",
+    "pantalla": "P-08",
+    "flujo": "Flujo 4",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/agenda/nueva · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "Hora ajustada a 16:30–17:30",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "F4-03_guardado-por-enviar.png",
+    "pantalla": "P-07",
+    "flujo": "Flujo 4",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/agenda?vista=dia&fecha=2026-05-14 · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "Guardada; barra \"4 registros por enviar\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-04_progreso-envio.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/envio · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "Envío automático al volver el Internet con progreso \"Enviando n de 4…\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-05a_exito-todo-enviado.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "5",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/envio · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "\"Se enviaron los 4 registros\" y barra \"Todo enviado\"; distintivos \"Enviado\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-05b_distintivos-enviado.png",
+    "pantalla": "P-02",
+    "flujo": "Flujo 4",
+    "paso": "5",
+    "url_o_acciones": "?today=2026-05-12&latency=1500#/casos · Flujo 4 a continuación del Flujo 2; context.setOffline(false) devuelve el Internet",
+    "demuestra": "El caso del Flujo 1 pasa a \"Enviado\" en la lista",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-06a_fallo-parcial.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&scenario=sync-partial#/envio · seed=mixed&scenario=sync-partial; [Enviar ahora] en la barra",
+    "demuestra": "Fallo parcial: \"Se enviaron 2 de 4…\" con [Reintentar]",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-06b_error-servidor.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&scenario=sync-error#/envio · seed=mixed&scenario=sync-error; [Enviar ahora] en la barra",
+    "demuestra": "Error del servidor: registros seguros en la tableta, [Reintentar]",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-06c_conflicto-resuelto.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&scenario=conflict#/envio · seed=mixed&scenario=conflict; [Enviar ahora] en la barra",
+    "demuestra": "Conflicto resuelto automáticamente con el cambio más reciente y aviso del campo",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "F4-06d_ver-y-cambiar.png",
+    "pantalla": "P-09",
+    "flujo": "Flujo 4",
+    "paso": "6",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&scenario=conflict#/envio · seed=mixed&scenario=conflict; [Enviar ahora] en la barra",
+    "demuestra": "[Ver y cambiar]: comparación por campo tableta / computadora",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "FA-01_busqueda-filtro.png",
+    "pantalla": "P-02",
+    "flujo": "Flujo A",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Búsqueda \"Quispe\" + filtro En conciliación; motivo de atención en texto",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "FA-02_caso-cita-vencida.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo A",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4 · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Detalle con \"Cita vencida\", distintivo, partes, historial",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "FA-03a_registrar-avance.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo A",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4 · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Ventana \"Registrar avance\" con condicional de acuerdo al pasar a Concluido",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "FA-03b_exige-acuerdo.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo A",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4 · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Concluido exige el acuerdo (mensaje en lenguaje simple)",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "FA-03c_foto-acta.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo A",
+    "paso": "3",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4 · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Acuerdo escrito y foto del acta adjunta + referencia física",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "FA-04a_modificado.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo A",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4/editar · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "Campo editado resaltado con \"Modificado\" y botón [Deshacer cambios]",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "FA-04b_deshacer.png",
+    "pantalla": "P-03",
+    "flujo": "Flujo A",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4/editar · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "[Deshacer cambios] devuelve el valor original",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "FA-04c_confirmacion-cambios.png",
+    "pantalla": "P-04",
+    "flujo": "Flujo A",
+    "paso": "4",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c4 · Flujo A (reset=1): buscar, filtrar, registrar avance, editar",
+    "demuestra": "\"Se guardó 1 cambio en la tableta: Observaciones.\"",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "FB-01_computadora-aviso.png",
+    "pantalla": "P-10",
+    "flujo": "Flujo B",
+    "paso": "1",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&device=pc · Flujo B: viewport 1440×900, device=pc",
+    "demuestra": "Vista en computadora 1440×900 con aviso del último envío; no afirma pendientes de la tableta",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "FB-02_editar-caso.png",
+    "pantalla": "P-10",
+    "flujo": "Flujo B",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&device=pc · Flujo B: viewport 1440×900, device=pc",
+    "demuestra": "Edición de un caso desde la computadora (origen de conflicto)",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "FB-03_guardado-computadora.png",
+    "pantalla": "P-10",
+    "flujo": "Flujo B",
+    "paso": "2",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&device=pc · Flujo B: viewport 1440×900, device=pc",
+    "demuestra": "Cambio guardado en el Poder Judicial",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "G-01_barra-con-internet-todo-enviado.png",
+    "pantalla": "Barra",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/ · reset=1; seed=mixed para pendientes; context.setOffline(true) para \"Sin Internet\"",
+    "demuestra": "\"Con Internet\" (azul) · \"Todo enviado\" (verde) · último envío",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-02_barra-con-internet-pendientes-enviar-ahora.png",
+    "pantalla": "Barra",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed#/ · reset=1; seed=mixed para pendientes; context.setOffline(true) para \"Sin Internet\"",
+    "demuestra": "\"4 registros por enviar\" (ámbar) y botón visible [Enviar ahora]",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-03_barra-sin-internet-pendientes.png",
+    "pantalla": "Barra",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed#/ · reset=1; seed=mixed para pendientes; context.setOffline(true) para \"Sin Internet\"",
+    "demuestra": "\"Sin Internet\" en gris (nunca rojo) · \"4 registros por enviar\"; sin [Enviar ahora]",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-04_barra-sin-internet-todo-enviado.png",
+    "pantalla": "Barra",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed#/ · reset=1; seed=mixed para pendientes; context.setOffline(true) para \"Sin Internet\"",
+    "demuestra": "\"Sin Internet\" (gris) · \"Todo enviado\" (verde)",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-05_recordatorio-dias-sin-enviar.png",
+    "pantalla": "P-01",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed#/ · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Recordatorio \"Lleva 5 días sin enviar sus registros…\" (seed=mixed)",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-06_progreso-envio.png",
+    "pantalla": "P-09",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&freeze=1#/envio · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Progreso \"Enviando 2 de 4…\" con barra al 50 % y estado por registro (freeze=1)",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "G-07_opcional-y-condicionales.png",
+    "pantalla": "P-06",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/actuaciones/nueva · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Etiquetas \"(opcional)\" y líneas de campos condicionales (\"Se pide cuando…\")",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "G-08_borrador-casos.png",
+    "pantalla": "P-02",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "\"Borrador · falta: personas\" y casilla \"Mostrar solo borradores\" (casos)",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "G-09_borrador-actuaciones.png",
+    "pantalla": "P-05",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/actuaciones · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "\"Borrador · falta: personas\" y filtro de borradores (actuaciones)",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "G-10_borrador-agenda.png",
+    "pantalla": "P-07",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "\"Borrador · falta: lugar\" y filtro de borradores (agenda)",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "G-11_ayuda-dictado.png",
+    "pantalla": "P-03",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/nuevo · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Ayuda de dictado del teclado bajo el campo largo (sin micrófono propio)",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "G-12_bateria-20.png",
+    "pantalla": "P-01",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed&battery=20#/ · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Batería baja 20 %: lo registrado ya está en la tableta; [Enviar ahora]",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "G-13_bateria-10.png",
+    "pantalla": "P-01",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&battery=10#/ · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Batería 10 %: aviso más visible",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "G-14_letra-grande-formulario.png",
+    "pantalla": "P-03",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&font=large#/casos/nuevo · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "Formulario en letra Grande (21 px) sin romper el diseño",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "G-15_gire-la-tableta.png",
+    "pantalla": "Global",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/ · reset=1&today=2026-05-12 + parámetros indicados",
+    "demuestra": "\"Gire la tableta para usarla de lado\" en vertical 800×1280",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "P-00_olvido-pin.png",
+    "pantalla": "P-00",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12 · reset=1&today=2026-05-12",
+    "demuestra": "\"¿Olvidó su PIN?\" con explicación y campo para el código de la sede",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-00_pin.png",
+    "pantalla": "P-00",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12 · reset=1&today=2026-05-12",
+    "demuestra": "Ingreso con PIN: teclado numérico grande, sin patrón gestual",
+    "criterio_rubrica": "Factores humanos y dispositivo"
+  },
+  {
+    "archivo": "P-00b_ayuda-por-campo.png",
+    "pantalla": "P-00b",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/nuevo · reset=1&today=2026-05-12",
+    "demuestra": "Ayuda por campo (ícono help-circle): una línea con un ejemplo",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-00b_ayuda.png",
+    "pantalla": "P-00b",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/ayuda · reset=1&today=2026-05-12",
+    "demuestra": "Ayuda: ver la introducción y tamaño de letra",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-00b_introduccion-1.png",
+    "pantalla": "P-00b",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/intro · reset=1&today=2026-05-12",
+    "demuestra": "Introducción inicial, pantalla 1 de 3, con [Saltar] visible",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-00b_introduccion-2.png",
+    "pantalla": "P-00b",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/intro · reset=1&today=2026-05-12",
+    "demuestra": "Introducción inicial, pantalla 2 de 3, con [Saltar] visible",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-00b_introduccion-3.png",
+    "pantalla": "P-00b",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/intro · reset=1&today=2026-05-12",
+    "demuestra": "Introducción inicial, pantalla 3 de 3, con [Saltar] visible",
+    "criterio_rubrica": "Principios de diseño y heurísticas"
+  },
+  {
+    "archivo": "P-01_inicio.png",
+    "pantalla": "P-01",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/ · reset=1&today=2026-05-12",
+    "demuestra": "Inicio: Hoy, casos que requieren atención con motivo en texto, próximos 7 días y accesos grandes",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-02_casos-lista.png",
+    "pantalla": "P-02",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos · reset=1&today=2026-05-12",
+    "demuestra": "Lista de casos: búsqueda, filtros como botones, motivo de atención, borrador y distintivo por registro",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-03_caso-nuevo.png",
+    "pantalla": "P-03",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/nuevo · reset=1&today=2026-05-12",
+    "demuestra": "Caso nuevo, paso 1 de 3: código generado sin conexión, tipos con botones grandes",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-04_caso-detalle.png",
+    "pantalla": "P-04",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/casos/c15 · reset=1&today=2026-05-12",
+    "demuestra": "Detalle: estado, distintivo, motivo \"15+ días sin avance\", historial, evidencias; [Registrar avance] abajo a la derecha",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-05_actuaciones-lista.png",
+    "pantalla": "P-05",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/actuaciones · reset=1&today=2026-05-12",
+    "demuestra": "Lista de actuaciones con estado de atención, borrador y distintivo",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-06_actuacion-nueva.png",
+    "pantalla": "P-06",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/actuaciones/nueva · reset=1&today=2026-05-12",
+    "demuestra": "Actuación nueva, paso 1: 4 tarjetas en lenguaje cotidiano + [Ver más trámites]",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-07_agenda-dia.png",
+    "pantalla": "P-07",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda?vista=dia&fecha=2026-05-12 · reset=1&today=2026-05-12",
+    "demuestra": "Agenda Día (hoy)",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-07_agenda-mes.png",
+    "pantalla": "P-07",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda?vista=mes&fecha=2026-05-12 · reset=1&today=2026-05-12",
+    "demuestra": "Agenda Mes: hasta 3 actividades por día y \"+2 más\"",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-07_agenda-semana.png",
+    "pantalla": "P-07",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda?vista=semana&fecha=2026-05-12 · reset=1&today=2026-05-12",
+    "demuestra": "Agenda Semana: franja \"Mañana: 2 actividades\", categorías color + ícono + texto, estados",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-08_actividad-detalle.png",
+    "pantalla": "P-08",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda/g45 · reset=1&today=2026-05-12",
+    "demuestra": "Detalle de actividad: \"Creada desde el caso\" con enlace",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-08_actividad-nueva.png",
+    "pantalla": "P-08",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip#/agenda/nueva · reset=1&today=2026-05-12",
+    "demuestra": "Actividad nueva: todos los campos, \"(opcional)\", condicional de hora de término",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  },
+  {
+    "archivo": "P-09_envio.png",
+    "pantalla": "P-09",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&seed=mixed#/envio · reset=1&today=2026-05-12",
+    "demuestra": "Envío al Poder Judicial: registros por enviar con distintivo y [Enviar ahora]",
+    "criterio_rubrica": "Funcionamiento sin conexión"
+  },
+  {
+    "archivo": "P-10_computadora.png",
+    "pantalla": "P-10",
+    "flujo": "—",
+    "paso": "—",
+    "url_o_acciones": "?today=2026-05-12&pin=skip&device=pc#/ · reset=1&today=2026-05-12",
+    "demuestra": "Vista en computadora 1440×900: tablas con más columnas, aviso del último envío",
+    "criterio_rubrica": "Cobertura y funcionamiento de los módulos"
+  }
+]

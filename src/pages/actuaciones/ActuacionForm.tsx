@@ -1,6 +1,6 @@
 // OWNER: agente-actuaciones — P-06 Actuación: nueva o edición (3 pasos)
 import { ChangeEvent, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Camera, Plus, Save, Trash2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Camera, Plus, Save, Trash2, Undo2 } from 'lucide-react';
 import type { ActEstado, Actuacion, Evidence, FormDraft } from '../../lib/types';
 import { getDB, nextCode, peekCode, saveActuacion, setDraft, uid } from '../../lib/store';
 import { ACT_ESTADOS, ACT_ESTADOS_AYUDA, TIPOS_ACTUACION, emptyParty, findDuplicateActuacion, missingActuacion, validateParty } from '../../lib/domain';
@@ -485,6 +485,17 @@ function Form({ id, continuar }: { id?: string; continuar: boolean }) {
               {autosave.status}
             </span>
             {autosave.status && <Mark n={45} />}
+            {isEdit && (
+              <button
+                type="button"
+                className="btn btn-ghost"
+                data-testid="undo-changes"
+                disabled={JSON.stringify(a) === JSON.stringify(original)}
+                onClick={() => setA(structuredClone(original!))}
+              >
+                <Undo2 size={22} aria-hidden /> Deshacer cambios
+              </button>
+            )}
           </>
         }
       >
