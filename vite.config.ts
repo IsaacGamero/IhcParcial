@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// base = nombre del repositorio en GitHub Pages (BASE_PATH=/IhcParcial/ en el workflow de publicación)
+// base: '/' en Vercel (raíz del dominio); '/justicia-cercana/' en local y pruebas
 const BASE = process.env.BASE_PATH || (process.env.VERCEL ? '/' : '/justicia-cercana/'); // Vercel sirve en la raíz
 export default defineConfig({
   base: BASE,

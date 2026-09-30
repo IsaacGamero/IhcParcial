@@ -67,13 +67,8 @@ Para ver la tableta exacta en Chrome: DevTools (`F12`) › **Toggle device toolb
 3. Registrar algo: el contador pasa a "N registros por enviar" y el registro muestra "En la tableta". Recargar: la aplicación carga y los datos siguen ahí.
 4. Volver a conectar: el envío empieza solo y confirma el resultado.
 
-## Publicación en GitHub Pages
+## Publicación en Vercel
 
-El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) compila y publica en cada `push` a `main` (o a mano con "Run workflow").
+Publicado en `https://ihc-parcial.vercel.app/`. Vercel compila con `npm run build` en cada `push` a `main`. Durante ese build Vercel define `VERCEL=1` y la `base` de Vite pasa a `/`. En local la `base` sigue siendo `/justicia-cercana/`.
 
-1. Crear el repositorio con el nombre **`justicia-cercana`** (la `base` de Vite en `vite.config.ts` es `/justicia-cercana/`; si el nombre cambia, hay que cambiarla también).
-2. Subir el código a la rama `main`.
-3. En GitHub: **Settings › Pages › Build and deployment › Source: GitHub Actions**.
-4. Esperar a que termine la acción "Publicar en GitHub Pages". La aplicación queda en `https://ihc-parcial.vercel.app/`.
-
-Las rutas usan hash (`#/casos`, `#/casos/:id`), así que recargar cualquier pantalla no da error 404 en GitHub Pages.
+Las rutas usan hash (`#/casos`, `#/casos/:id`), así que recargar cualquier pantalla no da error 404.
