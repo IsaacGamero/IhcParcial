@@ -22,8 +22,10 @@ export function useAutosave(kind: Kind, editingId: string | null, step: number, 
     setSavedAt(Date.now());
   }, [kind]);
 
+  // Solo marca cambios reales: se omite la primera ejecución (montaje) para no crear borradores vacíos.
+  const initial = useRef(JSON.stringify([data, step]));
   useEffect(() => {
-    dirty.current = true;
+    if (JSON.stringify([data, step]) !== initial.current) dirty.current = true;
   }, [data, step]);
 
   useEffect(() => {

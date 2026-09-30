@@ -1,0 +1,202 @@
+[
+  {
+    "id": 50,
+    "pantalla": "P-01",
+    "elemento": "Banner ámbar \"Lleva 5 días sin enviar sus registros…\"",
+    "necesidad": "Olvida enviar durante días sin Internet y arriesga perder lo registrado si la tableta se daña",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H5 Prevención de errores",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Le recuerda el riesgo concreto al abrir la app, sin depender de que recuerde cuándo envió por última vez; reduce la pérdida de datos no enviados"
+  },
+  {
+    "id": 51,
+    "pantalla": "P-01",
+    "elemento": "Fila \"Tenía un caso sin terminar (Juan Quispe, 12/05)\" con [Continuar] [Descartar]",
+    "necesidad": "Un cierre inesperado o una interrupción la deja con un registro a medias",
+    "norman": "Feedback; Modelo conceptual (cuaderno)",
+    "nielsen": "H3 Control y libertad; H9 Recuperarse de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "Retoma el formulario exactamente donde quedó con un toque; Descartar pide confirmación, así no borra por error lo escrito"
+  },
+  {
+    "id": 52,
+    "pantalla": "P-01",
+    "elemento": "Bloque \"Casos que requieren atención\" con motivo en texto (\"Cita vencida\", \"Cita hoy\", \"15 días sin avance\")",
+    "necesidad": "Maneja muchos casos y no recuerda cuáles están atrasados",
+    "norman": "Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "El motivo escrito (no solo un color) le dice qué hacer con cada caso y el enlace la lleva directo al detalle"
+  },
+  {
+    "id": 53,
+    "pantalla": "P-01",
+    "elemento": "Aviso destacado \"Mañana: 2 actividades\" con \"Mañana 9:00 · Audiencia · Caso JZ04-…\"",
+    "necesidad": "Debe prepararse y trasladarse a otra comunidad para las citas del día siguiente",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Ve hora, tipo y caso de mañana sin abrir la agenda; evita faltar a una audiencia"
+  },
+  {
+    "id": 54,
+    "pantalla": "P-01",
+    "elemento": "Accesos grandes [Nuevo caso] [Nueva actuación] [Nueva actividad] con ícono + texto",
+    "necesidad": "Llega una persona y necesita empezar el registro de inmediato",
+    "norman": "Affordance; Mapping",
+    "nielsen": "H7 Flexibilidad y eficiencia",
+    "factor": "Ley de Fitts (botones de 64 px)",
+    "efecto": "Inicia cualquiera de las tres tareas en un toque desde la pantalla de entrada, con objetivos grandes que no fallan"
+  },
+  {
+    "id": 55,
+    "pantalla": "P-01",
+    "elemento": "Orden fijo de bloques: recordatorio → Hoy → atención → próximos → accesos",
+    "necesidad": "Revisa rápido su jornada antes de salir a campo",
+    "norman": "Modelo conceptual (cuaderno)",
+    "nielsen": "H8 Minimalismo; H4 Consistencia",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Lee de lo urgente a lo planificado siempre en el mismo orden, sin buscar la información"
+  },
+  {
+    "id": 56,
+    "pantalla": "P-07",
+    "elemento": "Franja superior \"Mañana: 2 actividades\" que abre la vista Día de mañana",
+    "necesidad": "Olvida las citas próximas cuando pasa días en comunidades",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "El recordatorio aparece dentro de la app sin notificaciones del navegador y con un toque muestra el detalle de mañana"
+  },
+  {
+    "id": 57,
+    "pantalla": "P-07",
+    "elemento": "Selector grande [Mes] [Semana] [Día], botón [Hoy] y flechas anterior/siguiente",
+    "necesidad": "Poca práctica con calendarios digitales y gestos",
+    "norman": "Affordance; Signifier",
+    "nielsen": "H3 Control y libertad; H4 Consistencia",
+    "factor": "Poca experiencia digital (sin gestos ocultos); Ley de Fitts",
+    "efecto": "Cambia de periodo con botones visibles en vez de deslizar; [Hoy] la devuelve a la fecha actual si se pierde"
+  },
+  {
+    "id": 58,
+    "pantalla": "P-07",
+    "elemento": "Búsqueda por título, comunidad o persona + filtros de tipo y estado + \"Mostrar solo borradores\"",
+    "necesidad": "Recuerda a quién o dónde, no la fecha de la actividad",
+    "norman": "Constraints",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Encuentra la actividad escribiendo la comunidad o el nombre, y ubica los borradores pendientes de completar"
+  },
+  {
+    "id": 59,
+    "pantalla": "P-07",
+    "elemento": "Celda de mes con hasta 3 actividades y \"+2 más\"; tocar el día abre la vista Día",
+    "necesidad": "Planifica el mes y necesita ver la carga de cada día",
+    "norman": "Mapping",
+    "nielsen": "H8 Minimalismo; H6 Reconocer antes que recordar",
+    "factor": "Legibilidad (18 px) en tableta de 10\"",
+    "efecto": "Las celdas no se saturan ni se cortan y el \"+2 más\" indica que hay más, que se ven completos con un toque"
+  },
+  {
+    "id": 60,
+    "pantalla": "P-07",
+    "elemento": "Categoría con color + ícono + texto y estado con ícono (Cancelada tachada en gris)",
+    "necesidad": "Distinguir de un vistazo audiencias, reuniones y visitas, al aire libre",
+    "norman": "Signifier",
+    "nielsen": "H4 Consistencia; H2 Lenguaje del mundo real",
+    "factor": "Legibilidad al aire libre; daltonismo",
+    "efecto": "El texto e ícono mantienen el significado aunque el color no se distinga; lo cancelado no se confunde con lo pendiente"
+  },
+  {
+    "id": 61,
+    "pantalla": "P-07",
+    "elemento": "Detalle: \"Creada desde el caso JZ04-…\" con enlace",
+    "necesidad": "Necesita revisar el caso antes de la audiencia",
+    "norman": "Mapping; Modelo conceptual (cuaderno)",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Pasa de la cita al expediente con un toque, sin buscar el código"
+  },
+  {
+    "id": 62,
+    "pantalla": "P-07",
+    "elemento": "Cambio rápido de estado (Programada / Realizada / Cancelada) en el detalle",
+    "necesidad": "Al terminar una audiencia quiere dejar constancia sin editar todo",
+    "norman": "Feedback",
+    "nielsen": "H7 Flexibilidad y eficiencia; H3 Control y libertad",
+    "factor": "Ley de Fitts",
+    "efecto": "Marca realizada o cancelada con un toque y puede revertirlo igual de fácil; confirma que se guardó en la tableta"
+  },
+  {
+    "id": 63,
+    "pantalla": "P-08",
+    "elemento": "Título con sugerencias (\"Audiencia de conciliación\", \"Reunión con autoridades comunales\", \"Visita a …\")",
+    "necesidad": "Escribir en el teclado en pantalla es lento",
+    "norman": "Constraints",
+    "nielsen": "H6 Reconocer antes que recordar; H7 Flexibilidad",
+    "factor": "Teclado en pantalla; poca experiencia digital",
+    "efecto": "Elige un nombre frecuente en lugar de escribirlo completo y los títulos quedan uniformes para buscarlos luego"
+  },
+  {
+    "id": 64,
+    "pantalla": "P-08",
+    "elemento": "Tipo de actividad como botones con ícono y color",
+    "necesidad": "No conoce listas desplegables y confunde categorías",
+    "norman": "Affordance; Signifier",
+    "nielsen": "H6 Reconocer antes que recordar; H4 Consistencia",
+    "factor": "Ley de Hick (4 opciones); Ley de Fitts",
+    "efecto": "Ve las 4 opciones a la vez con el mismo ícono y color que en la agenda, y elige con un toque"
+  },
+  {
+    "id": 65,
+    "pantalla": "P-08",
+    "elemento": "Estado prellenado \"Programada\" y aviso \"Marcó como realizada una actividad que aún no ocurre. ¿Es correcto?\"",
+    "necesidad": "Toca la opción equivocada por apuro",
+    "norman": "Constraints; Feedback",
+    "nielsen": "H5 Prevención de errores; H9 Recuperarse de errores",
+    "factor": "Poca experiencia digital",
+    "efecto": "El valor más común ya está elegido y un aviso no bloqueante detecta la incoherencia antes de guardar"
+  },
+  {
+    "id": 66,
+    "pantalla": "P-08",
+    "elemento": "Vínculo opcional: buscar caso o trámite por código o nombre",
+    "necesidad": "Relacionar la cita con su expediente sin recordar códigos",
+    "norman": "Mapping",
+    "nielsen": "H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Encuentra el caso por el nombre de la persona y la actividad queda enlazada para buscarla por esa persona"
+  },
+  {
+    "id": 67,
+    "pantalla": "P-08",
+    "elemento": "Recordatorio segmentado No / El mismo día / 1 día antes (prellenado \"1 día antes\")",
+    "necesidad": "Olvida citas cuando viaja entre comunidades",
+    "norman": "Constraints",
+    "nielsen": "H5 Prevención de errores; H6 Reconocer antes que recordar",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Sin configurar nada recibe el aviso de la víspera, que aparece en Inicio y en la Agenda"
+  },
+  {
+    "id": 68,
+    "pantalla": "P-08",
+    "elemento": "Aviso de cruce: \"A esa hora ya tiene: Visita a Huayllay. ¿Agendar igual?\" con [Cambiar la hora] [Agendar igual]",
+    "necesidad": "No puede estar en dos comunidades a la vez",
+    "norman": "Feedback; Constraints",
+    "nielsen": "H5 Prevención de errores; H3 Control y libertad",
+    "factor": "Carga de memoria de trabajo",
+    "efecto": "Nombra la actividad que choca para decidir en el momento; no bloquea si el cruce es intencional"
+  },
+  {
+    "id": 69,
+    "pantalla": "P-08",
+    "elemento": "Guardado automático y confirmación \"Actividad guardada en la tableta. Se enviará cuando haya Internet.\" con distintivo ámbar",
+    "necesidad": "Duda de si lo registrado sin Internet quedó guardado",
+    "norman": "Feedback",
+    "nielsen": "H1 Visibilidad del estado",
+    "factor": "Poca experiencia digital; conectividad intermitente",
+    "efecto": "Sabe dónde quedó el registro y que falta enviarlo; el ámbar no se confunde con \"Enviado\""
+  }
+]

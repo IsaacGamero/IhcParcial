@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview --port 4173 --strictPort",
     "test": "playwright test",
-    "captures": "playwright test tests/captures.spec.ts"
+    "captures": "playwright test tests/captures.spec.ts",
+    "tablet": "node scripts/chrome-tablet.mjs",
+    "tablet:pc": "node scripts/chrome-tablet.mjs --pc"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.3.0",
