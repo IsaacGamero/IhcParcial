@@ -7,8 +7,8 @@
 | Curso | CS2H01 Interacción Humano-Computador (UTEC, 2026-2), Examen Parcial |
 | Integrantes | Sebastian Antonio Hernandez Miñano, Andre Contreras Valera, Isaac Percy Gamero del Aguila |
 | Título | Justicia Cercana: cuaderno digital del juez de paz para tableta de 10" que funciona sin Internet |
-| Enlace del prototipo | **`https://isaacgamero.github.io/IhcParcial/`** |
-| Enlace de demostración | `https://isaacgamero.github.io/IhcParcial/?reset=1&today=2026-05-12` |
+| Enlace del prototipo | **`https://ihc-parcial.vercel.app/`** |
+| Enlace de demostración | `https://ihc-parcial.vercel.app/?reset=1&today=2026-05-12` |
 | Código QR | _[insertar aquí la imagen del QR generada a partir del enlace de demostración definitivo, por ejemplo `docs/qr-github-pages.png`, de unos 4×4 cm]_ |
 
 ### Instrucciones de uso

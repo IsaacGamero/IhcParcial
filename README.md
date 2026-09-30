@@ -7,7 +7,7 @@ Prototipo web funcional para el Examen Parcial de CS2H01 Interacción Humano-Com
 - El Poder Judicial, el envío, los conflictos y el desbloqueo por código están **simulados**.
 - Documentación: [`docs/INFORME.md`](docs/INFORME.md) (informe) y [`docs/MATRIZ.md`](docs/MATRIZ.md) (matriz de justificación).
 
-Enlace publicado: `https://isaacgamero.github.io/IhcParcial/`. PIN de demostración: **1234**.
+Enlace publicado: `https://ihc-parcial.vercel.app/`. PIN de demostración: **1234**.
 
 ## Cómo ejecutar
 
@@ -74,6 +74,6 @@ El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) compi
 1. Crear el repositorio con el nombre **`justicia-cercana`** (la `base` de Vite en `vite.config.ts` es `/justicia-cercana/`; si el nombre cambia, hay que cambiarla también).
 2. Subir el código a la rama `main`.
 3. En GitHub: **Settings › Pages › Build and deployment › Source: GitHub Actions**.
-4. Esperar a que termine la acción "Publicar en GitHub Pages". La aplicación queda en `https://isaacgamero.github.io/IhcParcial/`.
+4. Esperar a que termine la acción "Publicar en GitHub Pages". La aplicación queda en `https://ihc-parcial.vercel.app/`.
 
 Las rutas usan hash (`#/casos`, `#/casos/:id`), así que recargar cualquier pantalla no da error 404 en GitHub Pages.
